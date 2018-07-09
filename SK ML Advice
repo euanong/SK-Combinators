@@ -1,0 +1,35 @@
+How to represent data?
+- Sequence of 'sequences'
+Can you find a mapping between one of the sequences and an integer? 
+	--> base4 encoding (this will be unique)
+		Problem: input size is unbounded.
+		Solution: Generate training set, use base4 encoding, look at maximum
+	--> or ?strings or something?
+		Advantages - it captures subtleties of combinators
+			Alternatively, use base4 and padding - then they become 'images' (matrices).
+				In this case, still use RNN - a sequence of n-dimensional vectors where n is the longest element in training set.
+	--> or trees?
+		Advantages - purest method of representing combinators.
+- or just initial SKcombinator ('sequence')
+
+How to creat
+
+Type of dataset? (50:50 halt:no halt or actual distribution?)
+	Training set *must* be balanced, even if real world not balanced.
+
+Ratio of data within dataset? (distribution of examples belonging to specific class)
+	Usually unimportant - just experiment. Generate a *balanced training set* and an *unbalanced training set*
+
+What model to use?
+	Recurrent neural net.
+		base4 format - sequence classification problem.
+			Usual entry-level problem - sentiment analysis. Take this architecture and experiment.
+			Look at tutorials about sentiment analysis (simple - this problem is much harder)
+
+Ensure {no --> very few} combinators halt within the given training set, otherwise problem is trivial.
+	(e.g. size 10 vector - [[9]]!=[[10]] - experiment)
+
+
+First thing to try: do the initial base 4 encoding, generate (some large n) training sets, find vocabulary size and check for presence of duplicates. If super sparse (large vocabulary, most tokens only appear once), this is bad
+	--> try sequence encoding, with padding method. (Problem - a lot of padding. This is also bad. Experiment with different initial evolution lengths)
+(alternatively, try RNN with just initial state - will solve all of the above problems, but probably won't work. 0th thing to try - training example just a sequence of {chars/base4 numbers})

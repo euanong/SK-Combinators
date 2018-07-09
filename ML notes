@@ -1,0 +1,15 @@
+ML notes
+========
+Regression task: output being predicted is a real number.
+Classification task: fixed set of classes
+
+Subtleties that are small to the human eye are not very small to NNs. (e.g. classifying 200 breeds of dog is an easy task)
+
+Regression tends to be harder than classification (especially if you're trying to predict many things)
+
+For a robust system, feed in many types / subclasses of input for a given class. (e.g. different depths of combinator, different directions for image dithering)
+
+Architectures:
+	Go to Neural Net repository, download [image training / recurrent neural net etc]
+
+-- Matteo Salvarezza
