@@ -1,0 +1,233 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      8205,        225]
+NotebookOptionsPosition[      6967,        201]
+NotebookOutlinePosition[      7321,        217]
+CellTagsIndexPosition[      7278,        214]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"CreateTrainingData", "[", "var_", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"NoHalt", ",", "Halt", ",", "HaltTrain", ",", "Train"}], "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"NoHalt", " ", "=", " ", 
+       RowBox[{"Select", "[", 
+        RowBox[{"var", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "False"}], "&"}]}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Halt", " ", "=", " ", 
+       RowBox[{"Select", "[", 
+        RowBox[{"var", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "True"}], "&"}]}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"HaltTrain", " ", "=", " ", 
+       RowBox[{"RandomSample", "[", 
+        RowBox[{"Halt", ",", 
+         RowBox[{"Length", "[", "NoHalt", "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Train", " ", "=", " ", 
+       RowBox[{"Join", "[", 
+        RowBox[{"HaltTrain", ",", "NoHalt"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", "Train", "]"}]}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ConvertSKTableToString", "[", "sktable_", "]"}], ":=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"ToString", "[", 
+       RowBox[{"sktable", "[", 
+        RowBox[{"[", 
+         RowBox[{"n", ",", "1"}], "]"}], "]"}], "]"}], "\[Rule]", " ", 
+      RowBox[{"sktable", "[", 
+       RowBox[{"[", 
+        RowBox[{"n", ",", "2"}], "]"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", 
+       RowBox[{"Length", "[", "sktable", "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.740490707394003*^9, 
+  3.740490710573811*^9}},ExpressionUUID->"d4b63f77-100e-4745-a930-\
+b8e0b9b16e22"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "lengths", "]"}]], "Input",
+ CellChangeTimes->{{3.740490671041646*^9, 
+  3.740490673524659*^9}},ExpressionUUID->"f39310b4-0dc0-4d63-b537-\
+f1ac5c66caeb"],
+
+Cell[BoxData[
+ RowBox[{"ImportDataset", "[", "\"\<TrainingDataRangeValues.mx\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.7404906688102903`*^9},ExpressionUUID->"826547af-72d9-41c3-a83b-\
+784d7fe5128b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lengths", " ", "=", " ", 
+   RowBox[{"lengths", "/.", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a_", "\[Rule]", "b_"}], ")"}], "/;", 
+      RowBox[{"!", 
+       RowBox[{"(", 
+        RowBox[{"b", "===", "False"}], ")"}]}]}], "\[RuleDelayed]", " ", 
+     RowBox[{"(", 
+      RowBox[{"a", "\[Rule]", "True"}], ")"}]}]}]}], ";"}]], "Input",
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"5bedb93b-a45c-4b30-aa7c-0366a456eb6a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"TrainingData", " ", "=", " ", 
+   RowBox[{"CreateTrainingData", "[", "lengths", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"TrainingData2", " ", "=", " ", 
+   RowBox[{"ConvertSKTableToString", "[", "TrainingData", "]"}]}], 
+  ";"}]}], "Input",
+ CellLabel->
+  "In[110]:=",ExpressionUUID->"fe15f235-ba42-4f68-8f7f-7bd1bdc0f4d2"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "lengths", "]"}]], "Input",ExpressionUUID->"21441534-12a4-4d99-9fe3-b573919f7b9e"],
+
+Cell[BoxData[
+ RowBox[{"ImportDataset", "[", "\"\<TestDataRangeValues.mx\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7404420718584633`*^9, 3.740442073086444*^9}, {
+  3.740490679822432*^9, 
+  3.740490682552368*^9}},ExpressionUUID->"7ab23ac9-77f0-4206-8542-\
+16ac613eaf1f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lengths", " ", "=", " ", 
+   RowBox[{"lengths", "/.", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a_", "\[Rule]", "b_"}], ")"}], "/;", 
+      RowBox[{"!", 
+       RowBox[{"(", 
+        RowBox[{"b", "===", "False"}], ")"}]}]}], "\[RuleDelayed]", " ", 
+     RowBox[{"(", 
+      RowBox[{"a", "\[Rule]", "True"}], ")"}]}]}]}], ";"}]], "Input",
+ CellLabel->
+  "In[114]:=",ExpressionUUID->"a52ba514-bd44-47cb-aa12-dce44f63f511"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"TestData", " ", "=", " ", 
+   RowBox[{"CreateTrainingData", "[", "lengths", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"TestData2", " ", "=", " ", 
+   RowBox[{"ConvertSKTableToString", "[", "TestData", "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.74044208097643*^9, 3.740442087106494*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"6d996176-9cd2-4e74-96c3-f47d08264636"],
+
+Cell[BoxData[
+ RowBox[{"net", "=", 
+  RowBox[{"NetChain", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"EmbeddingLayer", "[", "500", "]"}], ",", 
+      RowBox[{"DropoutLayer", "[", "0.1", "]"}], ",", 
+      RowBox[{"LongShortTermMemoryLayer", "[", "500", "]"}], ",", 
+      RowBox[{"SequenceLastLayer", "[", "]"}], ",", 
+      RowBox[{"LinearLayer", "[", "2", "]"}], ",", 
+      RowBox[{"SoftmaxLayer", "[", "]"}]}], "}"}], ",", 
+    RowBox[{"\"\<Input\>\"", "\[Rule]", 
+     RowBox[{"NetEncoder", "[", 
+      RowBox[{"{", "\"\<Characters\>\"", "}"}], "]"}]}], ",", 
+    RowBox[{"\"\<Output\>\"", "\[Rule]", 
+     RowBox[{"NetDecoder", "[", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Class\>\"", ",", 
+        RowBox[{"{", 
+         RowBox[{"True", ",", "False"}], "}"}]}], "}"}], "]"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.739979104567068*^9, 3.7399791045691347`*^9}, {
+  3.739979145300498*^9, 3.7399791467479553`*^9}, {3.739979210045763*^9, 
+  3.7399792113656673`*^9}, {3.739979427576929*^9, 3.739979432633465*^9}, {
+  3.739987403733869*^9, 3.739987416111919*^9}, {3.7404423595358067`*^9, 
+  3.740442359736758*^9}},ExpressionUUID->"978718ec-bbc5-4159-b673-\
+ec22ebe470a0"],
+
+Cell[BoxData[
+ RowBox[{"trained", "=", 
+  RowBox[{"NetTrain", "[", 
+   RowBox[{"net", ",", "TrainingData2", ",", 
+    RowBox[{"ValidationSet", "\[Rule]", "TestData2"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7399791586938257`*^9, 3.73997915869615*^9}, {
+  3.739979456559379*^9, 3.739979457256645*^9}, {3.7399798330610523`*^9, 
+  3.739979858227936*^9}, {3.7399800279716797`*^9, 3.739980033619668*^9}, {
+  3.739980179702547*^9, 3.739980182537425*^9}, {3.740442091201619*^9, 
+  3.740442091543661*^9}},
+ CellLabel->
+  "In[118]:=",ExpressionUUID->"8b913476-22e3-4d80-a1d6-277a5e7a2568"]
+},
+WindowSize->{808, 751},
+WindowMargins->{{33, Automatic}, {35, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 7, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 2016, 56, 199, "Input",ExpressionUUID->"d4b63f77-100e-4745-a930-b8e0b9b16e22"],
+Cell[2580, 78, 193, 4, 30, "Input",ExpressionUUID->"f39310b4-0dc0-4d63-b537-f1ac5c66caeb"],
+Cell[2776, 84, 206, 5, 30, "Input",ExpressionUUID->"826547af-72d9-41c3-a83b-784d7fe5128b"],
+Cell[2985, 91, 477, 14, 30, "Input",ExpressionUUID->"5bedb93b-a45c-4b30-aa7c-0366a456eb6a"],
+Cell[3465, 107, 382, 10, 52, "Input",ExpressionUUID->"fe15f235-ba42-4f68-8f7f-7bd1bdc0f4d2"],
+Cell[3850, 119, 122, 1, 30, "Input",ExpressionUUID->"21441534-12a4-4d99-9fe3-b573919f7b9e"],
+Cell[3975, 122, 275, 6, 30, "Input",ExpressionUUID->"7ab23ac9-77f0-4206-8542-16ac613eaf1f"],
+Cell[4253, 130, 477, 14, 30, "Input",ExpressionUUID->"a52ba514-bd44-47cb-aa12-dce44f63f511"],
+Cell[4733, 146, 435, 11, 52, "Input",ExpressionUUID->"6d996176-9cd2-4e74-96c3-f47d08264636"],
+Cell[5171, 159, 1204, 27, 73, "Input",ExpressionUUID->"978718ec-bbc5-4159-b673-ec22ebe470a0"],
+Cell[6378, 188, 585, 11, 30, "Input",ExpressionUUID->"8b913476-22e3-4d80-a1d6-277a5e7a2568"]
+}
+]
+*)
+

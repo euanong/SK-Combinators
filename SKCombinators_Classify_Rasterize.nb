@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[   1601096,      29902]
-NotebookOptionsPosition[   1594663,      29793]
-NotebookOutlinePosition[   1595048,      29810]
-CellTagsIndexPosition[   1595005,      29807]
+NotebookDataLength[   1568311,      29428]
+NotebookOptionsPosition[   1559912,      29292]
+NotebookOutlinePosition[   1560296,      29309]
+CellTagsIndexPosition[   1560253,      29306]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,13 +30,14 @@ Cell[BoxData["x"], "Output",
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"ImportDataset", "[", "\"\<10_40_randomnew_test.mx\>\"", 
+ RowBox[{"ImportDataset", "[", "\"\<5to50_40_10000_randomnew.mx\>\"", 
   "]"}]], "Input",
  CellChangeTimes->{{3.74005499322193*^9, 3.740055003931921*^9}, {
-  3.7402705665219812`*^9, 3.74027056774228*^9}, {3.740273297974127*^9, 
-  3.740273318265324*^9}},
+   3.7402705665219812`*^9, 3.74027056774228*^9}, {3.740273297974127*^9, 
+   3.740273318265324*^9}, {3.7403396981213217`*^9, 3.7403397018469152`*^9}, 
+   3.740409906481283*^9},
  CellLabel->
-  "In[194]:=",ExpressionUUID->"36142c88-8b2d-4037-a5a5-df62e3a30e0a"],
+  "In[148]:=",ExpressionUUID->"36142c88-8b2d-4037-a5a5-df62e3a30e0a"],
 
 Cell[BoxData[
  RowBox[{"Clear", "[", 
@@ -45,7 +46,7 @@ Cell[BoxData[
   3.7400550054195957`*^9, {3.740270745385046*^9, 3.740270748022455*^9}, {
    3.74027123866012*^9, 3.7402712395326*^9}},
  CellLabel->
-  "In[178]:=",ExpressionUUID->"791bd827-d7ed-4ece-aecf-6c251c14d3d9"],
+  "In[139]:=",ExpressionUUID->"791bd827-d7ed-4ece-aecf-6c251c14d3d9"],
 
 Cell[CellGroupData[{
 
@@ -57,7 +58,372 @@ Cell[BoxData[
  CellChangeTimes->{{3.740273055202351*^9, 3.740273059285438*^9}, {
   3.740273322674234*^9, 3.740273322885969*^9}},
  CellLabel->
-  "In[195]:=",ExpressionUUID->"aa95c0db-44c0-4376-9b41-6081f4b252e3"],
+  "In[149]:=",ExpressionUUID->"aa95c0db-44c0-4376-9b41-6081f4b252e3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7404099235112133`*^9, 
+  3.740409928323462*^9}},ExpressionUUID->"8d594566-9687-478b-b6d5-\
+6bcd3f56d62d"],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{3.740409925803733*^9},
+ CellLabel->
+  "Out[146]=",ExpressionUUID->"5804b4e5-fe8d-446c-aa90-736799c3aef6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["lengths"], "Input",
+ CellChangeTimes->{{3.740409965013695*^9, 3.74040996593294*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"3327e9d0-9e5f-406d-88de-4c7841ac705b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"k", "[", "k", "]"}], "[", "k", "]"}], "[", 
+             RowBox[{"k", "[", "s", "]"}], "]"}], "\[Rule]", "3"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"s", "[", "k", "]"}], "[", "s", "]"}], "[", 
+             RowBox[{"k", "[", "s", "]"}], "]"}], "\[Rule]", "4"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"k", "[", "k", "]"}], "[", 
+             RowBox[{
+              RowBox[{"k", "[", "k", "]"}], "[", "s", "]"}], "]"}], "\[Rule]",
+             "3"}], ",", 
+           TemplateBox[{"18426"},
+            "OutputSizeLimit`Skeleton"], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"s", "[", "s", "]"}], "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"s", "[", "k", "]"}], "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"s", "[", 
+                   RowBox[{
+                    RowBox[{"s", "[", "k", "]"}], "[", 
+                    RowBox[{"k", "[", "s", "]"}], "]"}], "]"}], "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"k", "[", 
+                    RowBox[{"k", "[", "s", "]"}], "]"}], "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"s", "[", "s", "]"}], "[", 
+                    RowBox[{"s", "[", "s", "]"}], "]"}], "[", "s", "]"}], "[",
+                     "s", "]"}], "]"}], "[", 
+                   RowBox[{
+                    RowBox[{"s", "[", "s", "]"}], "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"k", "[", "k", "]"}], "[", "s", "]"}], "[", "k", 
+                    "]"}], "[", "k", "]"}], "]"}], "]"}], "]"}], "[", 
+                 RowBox[{
+                  RowBox[{"s", "[", 
+                   RowBox[{"k", "[", "k", "]"}], "]"}], "[", 
+                  RowBox[{
+                   RowBox[{"k", "[", "k", "]"}], "[", 
+                   RowBox[{
+                    RowBox[{"s", "[", "s", "]"}], "[", "k", "]"}], "]"}], 
+                  "]"}], "]"}], "[", 
+                RowBox[{"s", "[", "k", "]"}], "]"}], "]"}], "[", 
+              RowBox[{
+               RowBox[{"k", "[", "s", "]"}], "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"k", "[", "s", "]"}], "[", 
+                  RowBox[{
+                   RowBox[{"s", "[", "s", "]"}], "[", "k", "]"}], "]"}], "[", 
+                 
+                 RowBox[{
+                  RowBox[{"k", "[", "k", "]"}], "[", "s", "]"}], "]"}], "[", 
+                RowBox[{
+                 RowBox[{"s", "[", "s", "]"}], "[", 
+                 RowBox[{
+                  RowBox[{"s", "[", "k", "]"}], "[", "s", "]"}], "]"}], "]"}],
+                "]"}], "]"}], "]"}], "\[Rule]", "5"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"s", "[", 
+              RowBox[{"s", "[", 
+               RowBox[{
+                RowBox[{"s", "[", "k", "]"}], "[", "s", "]"}], "]"}], "]"}], 
+             "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"s", "[", 
+                  RowBox[{"s", "[", "s", "]"}], "]"}], "[", 
+                 RowBox[{"s", "[", 
+                  RowBox[{"s", "[", "s", "]"}], "]"}], "]"}], "[", 
+                RowBox[{"k", "[", "s", "]"}], "]"}], "[", 
+               RowBox[{
+                RowBox[{"k", "[", "k", "]"}], "[", 
+                RowBox[{"k", "[", "s", "]"}], "]"}], "]"}], "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"k", "[", "s", "]"}], "[", "k", "]"}], "[", 
+                RowBox[{"s", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"s", "[", 
+                    RowBox[{"k", "[", "k", "]"}], "]"}], "[", "s", "]"}], "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"s", "[", "s", "]"}], "[", "s", "]"}], "[", "s", 
+                   "]"}], "]"}], "]"}], "]"}], "[", 
+               RowBox[{
+                RowBox[{"k", "[", "s", "]"}], "[", 
+                RowBox[{
+                 RowBox[{"s", "[", 
+                  RowBox[{"s", "[", 
+                   RowBox[{"k", "[", 
+                    RowBox[{
+                    RowBox[{"s", "[", "s", "]"}], "[", 
+                    RowBox[{"k", "[", 
+                    RowBox[{"k", "[", "k", "]"}], "]"}], "]"}], "]"}], "]"}], 
+                  "]"}], "[", 
+                 RowBox[{
+                  RowBox[{"k", "[", 
+                   RowBox[{"s", "[", "k", "]"}], "]"}], "[", 
+                  RowBox[{
+                   RowBox[{"k", "[", 
+                    RowBox[{"s", "[", "s", "]"}], "]"}], "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"k", "[", "k", "]"}], "[", "k", "]"}], "[", 
+                    RowBox[{"k", "[", "s", "]"}], "]"}], "]"}], "]"}], "]"}], 
+                "]"}], "]"}], "]"}], "]"}], "\[Rule]", "13"}]}], "}"}],
+         Short[#, 10]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{73., {3., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLText",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{61., {0., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 154, 19907999721086255986, 10/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{68., {0., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 154, 19907999721086255986, 10 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{51., {0., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 154, 19907999721086255986, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{92., {1., 10.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "OSLControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           BaselinePosition->Baseline,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    BaseStyle->"OutputSizeLimit",
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  If[19907999721086255986 === $SessionID, 
+   Out[154], Message[
+     MessageName[Syntax, "noinfoker"]]; Missing["NotAvailable"]; 
+   Null]]], "Output",
+ CellChangeTimes->{3.7404099679172564`*^9},
+ CellLabel->
+  "Out[154]=",ExpressionUUID->"6a9d6eeb-c1e4-49f0-bf2a-52641a9eb930"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"!", 
+  RowBox[{"(", 
+   RowBox[{"13", "===", "False"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.7404099970264482`*^9, 3.7404100025406733`*^9}},
+ CellLabel->
+  "In[164]:=",ExpressionUUID->"09624423-3565-40eb-91ee-18cb03aa8ad2"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.740409998124325*^9, 3.740410002910985*^9}},
+ CellLabel->
+  "Out[164]=",ExpressionUUID->"bd052712-2625-4a1e-afc2-3fe661ad16a9"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -87,33 +453,38 @@ Cell[BoxData[{
    RowBox[{"Select", "[", 
     RowBox[{"lengths", ",", 
      RowBox[{
-      RowBox[{
-       RowBox[{"#", "[", 
-        RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "True"}], "&"}]}], 
-    "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"!", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "===", " ", "False"}], ")"}]}], 
+      "&"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Length", "[", "NoHalt", "]"}], "\[IndentingNewLine]", 
  RowBox[{"Length", "[", "Halt", "]"}]}], "Input",
- CellChangeTimes->{{3.7400551295596123`*^9, 3.740055130429797*^9}},
+ CellChangeTimes->{{3.7400551295596123`*^9, 3.740055130429797*^9}, {
+  3.740409980476194*^9, 3.740410009748794*^9}},
  CellLabel->
-  "In[197]:=",ExpressionUUID->"3a8561dd-d3cc-45c7-be4c-cbec212850e0"],
+  "In[165]:=",ExpressionUUID->"3a8561dd-d3cc-45c7-be4c-cbec212850e0"],
 
-Cell[BoxData["483"], "Output",
+Cell[BoxData["728"], "Output",
  CellChangeTimes->{
   3.740055130970943*^9, 3.740058615237425*^9, 3.740058653640601*^9, {
    3.740060727234399*^9, 3.740060731621752*^9}, 3.740060766709722*^9, 
    3.74006276141543*^9, 3.740270438024929*^9, 3.740271134634453*^9, 
-   3.7402731258170137`*^9, 3.740273360540763*^9},
+   3.7402731258170137`*^9, 3.740273360540763*^9, 3.740409918667796*^9, {
+   3.740409959666892*^9, 3.740410010352612*^9}},
  CellLabel->
-  "Out[199]=",ExpressionUUID->"7672fba6-ee0c-4248-9822-3d273e476dbf"],
+  "Out[167]=",ExpressionUUID->"f76c159b-db5e-4e8a-a2eb-9ea4d0bc52af"],
 
-Cell[BoxData["4517"], "Output",
+Cell[BoxData["17703"], "Output",
  CellChangeTimes->{
   3.740055130970943*^9, 3.740058615237425*^9, 3.740058653640601*^9, {
    3.740060727234399*^9, 3.740060731621752*^9}, 3.740060766709722*^9, 
    3.74006276141543*^9, 3.740270438024929*^9, 3.740271134634453*^9, 
-   3.7402731258170137`*^9, 3.7402733605524693`*^9},
+   3.7402731258170137`*^9, 3.740273360540763*^9, 3.740409918667796*^9, {
+   3.740409959666892*^9, 3.740410010375587*^9}},
  CellLabel->
-  "Out[200]=",ExpressionUUID->"63e63a2f-efaa-4558-a03f-55498f18e89a"]
+  "Out[168]=",ExpressionUUID->"5d9aa562-1f78-4753-a391-e605291f5f97"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -123,7 +494,7 @@ Cell[BoxData[
     RowBox[{"Halt", ",", 
      RowBox[{"Length", "[", "NoHalt", "]"}]}], "]"}]}], ";"}]], "Input",
  CellLabel->
-  "In[201]:=",ExpressionUUID->"62d2b983-19f2-42a8-b5ff-e8eb67107879"],
+  "In[169]:=",ExpressionUUID->"62d2b983-19f2-42a8-b5ff-e8eb67107879"],
 
 Cell[CellGroupData[{
 
@@ -187,7 +558,7 @@ Cell[BoxData[
    3.7400552791784077`*^9, {3.740060901340098*^9, 3.740060902235196*^9}, {
    3.740061282393218*^9, 3.740061288499894*^9}},
  CellLabel->
-  "In[202]:=",ExpressionUUID->"22416634-4d0e-4bd7-b709-13ae60b07756"],
+  "In[170]:=",ExpressionUUID->"22416634-4d0e-4bd7-b709-13ae60b07756"],
 
 Cell[BoxData[
  RowBox[{
@@ -214,1198 +585,313 @@ Cell[BoxData[
   3.740055257367535*^9, 3.740055288255136*^9}, {3.740061300377823*^9, 
   3.740061300777479*^9}},
  CellLabel->
-  "In[203]:=",ExpressionUUID->"f7de1c0f-cbd2-4f02-b4ee-964e9ec022bb"],
+  "In[171]:=",ExpressionUUID->"f7de1c0f-cbd2-4f02-b4ee-964e9ec022bb"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"RasterTest", " ", "=", " ", 
+  RowBox[{"RasterTrain", " ", "=", " ", 
    RowBox[{"Join", "[", 
     RowBox[{"HaltTrainRaster", ",", "NoHaltTrainRaster"}], "]"}]}], 
   ";"}]], "Input",
  CellChangeTimes->{{3.74005535634354*^9, 3.740055374430488*^9}, {
   3.740061094295961*^9, 3.740061095143002*^9}, {3.740273386631186*^9, 
-  3.740273387401232*^9}},
+  3.740273387401232*^9}, {3.740410244639496*^9, 3.7404102454860697`*^9}},
  CellLabel->
-  "In[204]:=",ExpressionUUID->"a14ad5af-e780-4a85-b5e7-48e1b99e2e65"],
+  "In[196]:=",ExpressionUUID->"a14ad5af-e780-4a85-b5e7-48e1b99e2e65"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"DumpSave", "[", 
    RowBox[{
    "\"\</Users/eohomegrownapps/CODE/Assorted \
-codings/Wolfram/SK-Combinators/10_40_rastertest.mx\>\"", ",", "RasterTest"}], 
-   "]"}], ";"}]], "Input",
- CellChangeTimes->{{3.7402734251266413`*^9, 3.740273429274775*^9}},
+codings/Wolfram/SK-Combinators/5to50_40_10000_rastertrain.mx\>\"", ",", 
+    "RasterTrain"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7402734251266413`*^9, 3.740273429274775*^9}, {
+  3.740410213399358*^9, 3.740410214148657*^9}, {3.740410247438429*^9, 
+  3.740410253571681*^9}},
  CellLabel->
-  "In[205]:=",ExpressionUUID->"a47580f4-b0b5-4026-b5c5-55598c648a81"],
+  "In[177]:=",ExpressionUUID->"a47580f4-b0b5-4026-b5c5-55598c648a81"],
+
+Cell[BoxData["RasterTrain"], "Input",
+ CellChangeTimes->{{3.740410832274303*^9, 3.740410835996978*^9}},
+ CellLabel->
+  "In[197]:=",ExpressionUUID->"887f22dc-8ee5-4b45-a2bf-b230f9cca1a7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RasterPredict", "=", 
+   RowBox[{"RasterTrain", "/.", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"a_", "\[Rule]", "b_"}], ")"}], "/;", 
+      RowBox[{"b", "===", "False"}]}], "\[RuleDelayed]", " ", 
+     RowBox[{"(", 
+      RowBox[{"a", "\[Rule]", "0"}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.740410318281756*^9, 3.740410447437216*^9}, {
+  3.740410490126546*^9, 3.7404104929841757`*^9}, {3.740410891787073*^9, 
+  3.7404108922022257`*^9}},
+ CellLabel->
+  "In[198]:=",ExpressionUUID->"d74903b1-cfde-4891-8808-f2d881c017ef"],
+
+Cell[BoxData["RasterPredict"], "Input",
+ CellChangeTimes->{{3.740410898602379*^9, 3.7404109124725237`*^9}},
+ CellLabel->
+  "In[200]:=",ExpressionUUID->"79100d01-1191-495b-9075-5988645ddb92"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DumpSave", "[", 
+   RowBox[{
+   "\"\</Users/eohomegrownapps/CODE/Assorted \
+codings/Wolfram/SK-Combinators/5to50_40_10000_rasterpredict.mx\>\"", ",", 
+    "RasterPredict"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.74041064186095*^9, 3.7404106571387033`*^9}},
+ CellLabel->
+  "In[194]:=",ExpressionUUID->"bddf4700-a17e-41e2-9f0b-e3e7661f79db"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"RasterClassify", " ", "=", " ", 
-  RowBox[{"Classify", "[", "RasterTrain", "]"}]}]], "Input",
- CellChangeTimes->{{3.740055061397656*^9, 3.74005506177491*^9}, {
-  3.7400553772676487`*^9, 3.7400553902337313`*^9}},
+ RowBox[{"RasterPredictor", "=", 
+  RowBox[{"Predict", "[", "RasterPredict", "]"}]}]], "Input",
+ CellChangeTimes->{{3.740410529796958*^9, 3.7404105443004103`*^9}, 
+   3.7404107441380997`*^9},
  CellLabel->
-  "In[192]:=",ExpressionUUID->"6aece15b-8a30-4e27-ba06-1cea0014de0d"],
+  "In[195]:=",ExpressionUUID->"d97c793d-c340-4830-947c-16593e6a5173"],
 
 Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   TagBox["ClassifierFunction",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    
-    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquarePlusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            GraphicsBox[{{
-               PointSize[0.13], 
-               GrayLevel[0.45], 
-               
-               PointBox[{{0.9821769431797024, -0.440194219686987}, {
-                1.1339776261519132`, 0.8056918676854272}, {0.5279892326667741,
-                 0.6574306661126254}, {0.022147046479890797`, 
-                1.4937877187998898`}}], 
-               GrayLevel[0.7], 
-               
-               PointBox[{{-0.9815166384819979, 
-                0.15045697525228735`}, {-0.5923526886966953, \
--0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
-{-1.0734370436522753`, -1.3729645043477454`}}]}, {
-               GrayLevel[0.55], 
-               AbsoluteThickness[1.5], 
-               LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
-             Axes -> {False, False}, AxesLabel -> {None, None}, 
-              AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
-                AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
-              Frame -> {{True, True}, {True, True}}, 
-              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
-              Directive[
-                Thickness[Tiny], 
-                GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
-              GridLines -> {None, None}, 
-              LabelStyle -> {FontFamily -> "Arial"}, 
-              Method -> {"ScalingFunctions" -> None}, 
-              PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> True,
-               PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
-              Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
-             ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-             FrameTicks -> None, FrameStyle -> Directive[
-               Opacity[0.5], 
-               Thickness[Tiny], 
-               RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
-             GrayLevel[0.94]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"Image\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  
-                  TemplateBox[{",", "\",\"", "False", "True"}, 
-                   "RowWithSeparators"], "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquareMinusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            GraphicsBox[{{
-               PointSize[0.13], 
-               GrayLevel[0.45], 
-               
-               PointBox[{{0.9821769431797024, -0.440194219686987}, {
-                1.1339776261519132`, 0.8056918676854272}, {0.5279892326667741,
-                 0.6574306661126254}, {0.022147046479890797`, 
-                1.4937877187998898`}}], 
-               GrayLevel[0.7], 
-               
-               PointBox[{{-0.9815166384819979, 
-                0.15045697525228735`}, {-0.5923526886966953, \
--0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
-{-1.0734370436522753`, -1.3729645043477454`}}]}, {
-               GrayLevel[0.55], 
-               AbsoluteThickness[1.5], 
-               LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
-             Axes -> {False, False}, AxesLabel -> {None, None}, 
-              AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
-                AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
-              Frame -> {{True, True}, {True, True}}, 
-              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
-              Directive[
-                Thickness[Tiny], 
-                GrayLevel[0.7]], FrameTicks -> {{None, None}, {None, None}}, 
-              GridLines -> {None, None}, 
-              LabelStyle -> {FontFamily -> "Arial"}, 
-              Method -> {"ScalingFunctions" -> None}, 
-              PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> True,
-               PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
-              Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
-             ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-             FrameTicks -> None, FrameStyle -> Directive[
-               Opacity[0.5], 
-               Thickness[Tiny], 
-               RGBColor[0.368417, 0.506779, 0.709798]], Background -> 
-             GrayLevel[0.94]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Input type: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"Image\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Classes: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  
-                  TemplateBox[{",", "\",\"", "False", "True"}, 
-                   "RowWithSeparators"], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Method: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"LogisticRegression\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                 "\"Number of training examples: \"", 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["2636", "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  ClassifierFunction[
-   Association[
-   "ExampleNumber" -> 2636, "ClassNumber" -> 2, "Input" -> 
-    Association["Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset", 
-        Association[
-        "Input" -> Association["f1" -> Association["Type" -> "Image"]], 
-         "Output" -> 
-         Association["f1" -> Association["Type" -> "Image", "Weight" -> 1]], 
-         "Preprocessor" -> MachineLearning`MLProcessor["Sequence", 
-           Association["Processors" -> {
-              MachineLearning`MLProcessor["List"], 
-              MachineLearning`MLProcessor["WrapMLDataset", 
-               Association[
-               "FeatureTypes" -> {"Image"}, "FeatureKeys" -> {"f1"}, 
-                "FeatureWeights" -> Automatic, "ExampleWeights" -> Automatic, 
-                "RawExample" -> Missing["KeyAbsent", "RawExample"]]]}]], 
-         "ScalarFeature" -> True, "Invertibility" -> "Perfect", "Missing" -> 
-         "Allowed"]], "Processor" -> MachineLearning`MLProcessor["Sequence", 
-        Association[
-        "Input" -> Association[
-          "f1" -> Association["Type" -> "Image", "Weight" -> 1]], "Output" -> 
-         Association[
-          "f1" -> Association["Type" -> "NumericalVector", "Weight" -> 1]], 
-         "Processors" -> {
-           MachineLearning`MLProcessor["ImputeMissing", 
-            Association[
-            "Invertibility" -> "Perfect", "Missing" -> "Imputed", "Input" -> 
-             Association[
-              "f1" -> Association["Type" -> "Image", "Weight" -> 1]], "Fill" -> 
-             Image[CompressedData["
-1:eJztnF2KHUUUx68fiNtwDYm+Dm4hriBCRgRBiA/iPnyJruAuoZ99GlAUAsKA
-IJcrMqKIO9CZvvPvO+dX9c+pmpo7mcS5kFS6/30+66PPOVWd9z7+/NHxm6vV
-6ot3z/969PjLD58+ffzVR+9cXDx5/NkHD5+8df7Pi8uvz/+8ff7nm2cXv5Oj
-7+ffL0e76+nojdXF75+j1eVP9z85vvj9DvynhV7Xwh8+uPh9t/Cdm2ebBZ/h
-B88Xuh1+WtALn8Uf/2z47+0Qvru/XviSv+jYRnxaWulL/tKvjp8s9NRfuOyg
-f/Q8n6N8p5+eV/vv/Pu1kC868o/+X612z20XXP4kn1b72X91/0zN/V+XP11b
-P8mN49ePn4w/50fsv5N0/tTpp+U5jv+of6lfNj50X37J9OvtP+nDeermf6Yf
-16/o33Xav6Pjl/SRf2lf2/iZ7Pyg/tn60tv/4ufo6Z/R+cH1d3X5ezH9uvn9
-QVz3+Zybnxn/bHxk82eUP/0X8XXxfhFf+bVu/2THh553+nH8ZfbX398nhZzW
-9Y/09fVhWsbZ6PqZzd/rjb+Tpf8y/tSfevWuH1yfe+nb4jP2j4+/Mv71+Giy
-+tfjLz//Mv04P6L/nH77/pX8T2c9/y78k+G6Ji7+8j9xjo86/UkhX3JFL/4/
-zu1fdn0hzvnfSu/Gl3C+NzP+xDkueumJSw/qF/t3s+AaT+z/92d+fxb8idP+
-jF76Exe9WuJOP/Zbr36kp37Cnf11/2wWnHlrph/lMy4mznmj/qR+wunfun2b
-o2/n9o+CTvKFc9xJPnHx0TVx2iGc40L67da3s0Iv0QvXNf1AeupJevGXfT/M
-178t1+Kj+2qj3dtFf9KTr57XfdGpJS79dJ+440868qfdauv6nQ7TUx/aF/t5
-U9wnHsfVZnkPuPqT+l141Od5QZ/lf/X8bVvEN6LL3v9xfI7XB7L4OOqV13/q
-8c9UrJNOf/W3e/9LTowf1kV9S7j8xXVWuMt/XHwiPahf7J9NQS899HzEJ2s/
-x4X4uPhM/Uf9uP4Jp1/r9u/7nfzpl7p9Zf5O/lyHSe/6l+/HOv1+/NG/1Ls+
-vsr6jOIn+k98XPwo+cIZH/TGH/X4ZlPED/SvcOZvvfGZ6LjOuvgn45/FN7Sf
-/Uf9OP4ZH4k++u+08B/jf6d/xp/0HL+9+tF+7Z8IZ3yi56g/6xvC6Xfx0Xuy
-Pj738Vl837M+cFb4j/SUH99PZ2Z8bxc8xgMlPeeV9KV89i/lt+qn+Cvy31j+
-nJe0j3Iz++l/jgs9x/5x/qH9mf96+Wf09I/8q3kQ48t9XKrnRMf4lDj1E85+
-I87+kV6Mw6Uf42MnV7jaqKePv4nH+bVZ9KNeTr/I9zTNXzJ6yudz7r7zD+dF
-r390n+PL9Rv1FJ2jp9w4rre2H5x+jq5VPun5XBzXpR6t48bh7r6jd+PLXfO9
-5OajGzd6njjXHefvjJ7rNusJXJfYT704+Uo/zme1jAukL/3I+Ux6rZuq8+g5
-tXxftuLMCySPegrP9Iv1gLPivcd+y/izrhXPu5wVuPMv5aul/cozWulpH/1O
-+6gf41Laxfd2Lz3rhq5/WvlTL+K6pv3Ceb9e99wU+/T1+tO6OP8kP6sVH7c/
-Gde5cv819lu+f8z9HdJHu/b5n6t/SA/WX5hfufxefLj/EfH9/oboaX9r/h7t
-m5Z5QnrpLTuY/7N/SE89uX9D/1I/+pfy4zjYLjjpnPw4ntv3hzJcdnOcsD6h
-+xl/XZOefnL7I+pHt7+h59z+hPzr8rM4P8v9C7cOi67Of1P41+1vkL/40U6X
-30vP6+bPtJ/9mvGn/ZLHfnD1hax/KJ/9w7iR+su+iO/7h/SUy3FA+Rq3WR7I
-OExttj9Fel2z/0jP+Jz7W6LjOM7yFz7n4nvR0++ZHuSb0TP/YVvv9zLvdP5w
-ejl9SOf0Zb9wPXL5D/XL8ovR/CbDM/20LpOe8W99nuT53Wh+Rv4cL73y+R5Q
-S//QT84/WX6W5Q8ZPddV4qPxfxafM+4i3974nvIznPZJHz6n95ajJ848Vzjt
-Y1wuOunBfRddi54474/iuibu5JOOcSvlOnrRMW6mXxhX8j7zKtHL7730um6V
-z7yK92lfr/3kT7pMv0P7L7Pvpv130/4ZpR/Vb3T8j/r/0PIz/r14xj/DOa54
-boF4XN8m2388zzOLq5xf4vl9V0fdxQ/7PO6653cVh3Cdlp7i786vKq515yck
-h+u8cMYZopfefC+481usg0vvTL6ec+c7xJ9xBPMc1h/oX+LSkzjtV9u6P8vx
-JXmt5wNoH/k7/V1+Lv+5/W/aJ/l6jnkg+YueuFq3D+TyVPpP9rG+oOfc/rbT
-n/4lf+n94jzY1zf0fByH2wKnHc5+4qQT/3oeXtY5OH5I7+oJeo766znhpHP1
-gexcAvM7V4+gXrx2dr24X8r83/HP6J0f+VycT/v7XJdYp8zya9Iz7+S44nkD
-4qJz+3fky3WJ9L35MfPPm95/zPQn/1482z+kfpy3o/k3/Tuav2d4Vl/I9icP
-vb/ZW9/g/VH5pHf7r/PllX2c1voAccbF3DfVdWt8zfic93vj80w/8W3lP0p/
-aNzlN9Kb5/qpf7Rv3U1/aP63rR/5vur6ve74y+6/Q/f/XZt/9/4d8//o/J2b
-K+fbyVfX8X18tvDZ0Z8if/Pnh5R3sP5EPozTeM7FnZ/h+R/mv4xb3PkdxknU
-r/V8jOj1nPRhHMQ6gfu+V/qxfuJw6q3W1W9G6wvEpZ/jL1wt82TS189HlPup
-9Ty7rC9QLunJX/RqKTerT2T02fn1DNc15VOOw0f1J97rv4ze1UHq56P9+Q36
-jfPS9Ufm90x+pkfv+Rj6L5NPPm7ekZ76tOJOboa7a647rq7l5HHddPWP3fNl
-/YnrKusjxFnXyc5n9NZ/qHfv+ZCsvuDqX8JH6yPky/e++z6A9Netb7jz/U5/
-5x+2ijMon3jv/mkvftP1kUPXL1z94br1Gd7vpe+tP902ftfzq1H5r3p9Qvqz
-XV3+7vF7/B6/x/+v+LxMFt/fTVhH99/P8Zzw3FypH/B8kK75fRfPF81sr5yP
-4D618B39aVG/0X3G8cyvxWfnh/L8jcszaCdxynfnT9RynzfyKes3zKfc/4/G
-+gHlZt+3u/qGrrP8djT/z/Jb8qH+mZze/Jit87s7nyL+md/V8v+lieM0/66f
-/HnNeeHqeb38qZ/GG/Hs+/ne/J90xN35DuKt9MSpV2Zfr3zaF/1c1gMz/Xv9
-774/In/ar3XN+U94dv4kq3+01i94PkLvu+x8hfu+QjjrI731B97P8Ey+WtKr
-5b4PvwvJ6PldNf1KetrFc8u8n51fiXFJ+X1KRk/5pMu+vxmV32ufrlvpFd+5
-8z2j3w8Rv+n62W1/H3HT9bFenPd78VH5vfW9Q9cPXzf/9tZ3X7Z+hx5fhx5/
-hz6fGNfX/vr7XZ9/tG+0fn/b/rnt8Ts6v0f7566Nv178P/mXboc=
-               "], 
-               "Real", ColorSpace -> "RGB", Interleaving -> True], "Output" -> 
-             Association[
-              "f1" -> Association["Type" -> "Image", "Weight" -> 1]], "Type" -> 
-             "Image", "Version" -> {11.3, 0}, "ID" -> 7263179337424669307]], 
-           MachineLearning`MLProcessor["ConformImage", 
-            Association[
-            "Invertibility" -> "Approximate", "Missing" -> "Allowed", "Input" -> 
-             Association[
-              "f1" -> Association["Type" -> "Image", "Weight" -> 1]], 
-             "Example" -> Image[CompressedData["
-1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
-UJANiHcAMYg9CkbBKBgFo2AUjIJRMApGwSgYBcMVAABsOQ0d
-               "], "Byte", 
-               ColorSpace -> "RGB", Interleaving -> True], 
-             "Version" -> {11.3, 0}, "ID" -> 2374815654774386280, "Output" -> 
-             Association[
-              "f1" -> Association["Type" -> "Image", "Weight" -> 1]]]], 
-           MachineLearning`MLProcessor["ImageExtractNumericalVector", 
-            Association[
-            "Invertibility" -> "Impossible", "Missing" -> "Forbidden", 
-             "Input" -> Association[
-              "f1" -> Association[
-                "Type" -> "Image", "Weight" -> 1, "Dimensions" -> {184, 6}, 
-                 "Channels" -> 3]], "ExtractorName" -> "ImagePixels", 
-             "ExtractorVersion" -> "V1", "FeatureNumber" -> Automatic, 
-             "Version" -> {11.3, 0}, "ID" -> 9132648740962258546, "Output" -> 
-             Association[
-              "f1" -> Association[
-                "Type" -> "NumericalVector", "Weight" -> 1]]]]}, 
-         "Invertibility" -> "Impossible", "Missing" -> "Imputed"]]], "Output" -> 
-    Association["Preprocessor" -> MachineLearning`MLProcessor["ToMLDataset", 
-        Association[
-        "Input" -> Association["f1" -> Association["Type" -> "Nominal"]], 
-         "Output" -> 
-         Association["f1" -> Association["Type" -> "Nominal", "Weight" -> 1]],
-          "Preprocessor" -> MachineLearning`MLProcessor["Sequence", 
-           Association["Processors" -> {
-              MachineLearning`MLProcessor["List"], 
-              MachineLearning`MLProcessor["WrapMLDataset", 
-               Association[
-               "FeatureTypes" -> {"Nominal"}, "FeatureKeys" -> {"f1"}, 
-                "FeatureWeights" -> Automatic, "ExampleWeights" -> Automatic, 
-                "RawExample" -> Missing["KeyAbsent", "RawExample"]]]}]], 
-         "ScalarFeature" -> True, "Invertibility" -> "Perfect", "Missing" -> 
-         "Allowed"]], "Processor" -> MachineLearning`MLProcessor["Sequence", 
-        Association[
-        "Input" -> Association[
-          "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], "Output" -> 
-         Association["f1" -> Association["Type" -> "Nominal", "Weight" -> 1]],
-          "Processors" -> {
-           MachineLearning`MLProcessor["ToVector", 
-            Association[
-            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
-             Association[
-              "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], 
-             "Output" -> 
-             Association[
-              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
-             "Version" -> {11.3, 0}, "ID" -> 189542236370097623]], 
-           MachineLearning`MLProcessor["IntegerEncodeNominalVector", 
-            Association[
-            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
-             Association[
-              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
-             "Index" -> {
-               Association[False -> 1, True -> 2]}, "MissingCode" -> 0, 
-             "Version" -> {11.3, 0}, "ID" -> 6121176830212442212, "Output" -> 
-             Association[
-              "f1" -> Association[
-                "Type" -> "NominalVector", "Weight" -> 1]]]], 
-           MachineLearning`MLProcessor["FromVector", 
-            Association[
-            "Invertibility" -> "Perfect", "Missing" -> "Allowed", "Input" -> 
-             Association[
-              "f1" -> Association["Type" -> "NominalVector", "Weight" -> 1]], 
-             "Output" -> 
-             Association[
-              "f1" -> Association["Type" -> "Nominal", "Weight" -> 1]], 
-             "Version" -> {11.3, 0}, "ID" -> 4360688507420005202]], 
-           MachineLearning`MLProcessor["FirstValues", 
-            Association[
-            "Info" -> Association[
-              "Type" -> "Nominal", "Weight" -> 1, "SetSize" -> 2], "Key" -> 
-             "f1", "Invertibility" -> "Perfect", "Missing" -> "Allowed"]]}, 
-         "Invertibility" -> "Perfect", "Missing" -> "Allowed"]], 
-      "ProbabilityPostprocessor" -> Identity, "Name" -> "class", "Marginal" -> 
-      Association[False -> 0.5, True -> 0.5]], "Prior" -> Automatic, 
-    "Utility" -> 
-    SparseArray[
-     Automatic, {2, 3}, 0., {1, {{0, 1, 2}, {{2}, {3}}}, {1., 1.}}], 
-    "Threshold" -> 0, "TieBreaker" -> RandomChoice, "PerformanceGoal" -> 
-    Automatic, "BatchProcessing" -> Automatic, "Model" -> 
-    Association["LogProbabilitiesFunction" -> LinearLayer[
-        Association[
-        "Type" -> "Linear", "Arrays" -> 
-         Association["Weights" -> CompressedData["
-1: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
-
-            "], "Biases" -> RawArray["Real32",{0.008497676812112331}]], 
-         "Parameters" -> 
-         Association[
-          "OutputDimensions" -> {1}, "$OutputSize" -> 1, "$InputSize" -> 3312,
-            "$InputDimensions" -> {3312}], "Inputs" -> 
-         Association[
-          "Input" -> NeuralNetworks`TensorT[{3312}, NeuralNetworks`RealT]], 
-         "Outputs" -> 
-         Association[
-          "Output" -> NeuralNetworks`TensorT[{1}, NeuralNetworks`RealT]]], 
-        Association["Version" -> "11.3.5"]], "Processor" -> 
-      MachineLearning`MLProcessor["FirstValues", 
-        Association[
-        "Info" -> Association["Weight" -> 1, "Type" -> "NumericalVector"], 
-         "Key" -> "f1", "Invertibility" -> "Perfect", "Missing" -> 
-         "Allowed"]], "Method" -> "LogisticRegression", "Options" -> 
-      Association[
-       "L1Regularization" -> 
-        Association["Value" -> 0, "Options" -> Association[]], 
-        "L2Regularization" -> 
-        Association["Value" -> 1000., "Options" -> Association[]], 
-        "OptimizationMethod" -> 
-        Association["Value" -> "LBFGS", "Options" -> Association[]], 
-        MaxIterations -> 
-        Association["Value" -> 30, "Options" -> Association[]]]], 
-    "TrainingInformation" -> 
-    Association[
-     "LossName" -> "MeanCrossEntropy", "BestModelInformation" -> Dataset[
-        Association[
-        "MeanCrossEntropy" -> 
-         PlusMinus[0.39567742736326533`, 0.02499348208736278], "Accuracy" -> 
-         PlusMinus[0.8347351452546032, 0.022983890974224565`], 
-         "EvaluationTime" -> 0.00005449905123339658, "TestSize" -> 527, 
-         "TrainingSize" -> 2109, "TrainingTime" -> 1.53818, "TrainingMemory" -> 
-         167720792, "ModelMemory" -> 23416, "ExperimentCount" -> 1, 
-         "ModelUtility" -> 1.0780203612138233`, 
-         "MeanCrossEntropyHistory" -> {
-           PlusMinus[0.39567742736326533`, 0.017673060669438728`]}, 
-         "AccuracyHistory" -> {
-           PlusMinus[0.8347351452546032, 0.016252065165926474`]}, 
-         "Configuration" -> {
-          "LogisticRegression", "L1Regularization" -> 0, "L2Regularization" -> 
-           1000., "OptimizationMethod" -> Automatic, MaxIterations -> 30}], 
-        TypeSystem`Struct[{
-         "MeanCrossEntropy", "Accuracy", "EvaluationTime", "TestSize", 
-          "TrainingSize", "TrainingTime", "TrainingMemory", "ModelMemory", 
-          "ExperimentCount", "ModelUtility", "MeanCrossEntropyHistory", 
-          "AccuracyHistory", "Configuration"}, {
-         TypeSystem`AnyType, TypeSystem`AnyType, 
-          TypeSystem`Atom[Real], 
-          TypeSystem`Atom[Integer], 
-          TypeSystem`Atom[Integer], 
-          TypeSystem`Atom[Real], 
-          TypeSystem`Atom[Integer], 
-          TypeSystem`Atom[Integer], 
-          TypeSystem`Atom[Integer], 
-          TypeSystem`Atom[Real], 
-          TypeSystem`Vector[TypeSystem`AnyType, 1], 
-          TypeSystem`Vector[TypeSystem`AnyType, 1], 
-          TypeSystem`Tuple[{
-            TypeSystem`Atom[String], TypeSystem`AnyType, TypeSystem`AnyType, 
-            TypeSystem`AnyType, TypeSystem`AnyType}]}], 
-        Association["ID" -> 193484124453171]], "Configurations" -> Dataset[
-        Association[
-        Association[
-          "Value" -> "NaiveBayes", "Options" -> 
-           Association["SmoothingParameter" -> Association["Value" -> 0.2]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[626.3974905328771, 83.94466410491042], "Accuracy" -> 
-              PlusMinus[0.4405940594059407, 0.07012485283032993], 
-              "EvaluationTime" -> 0.008273230000000001, "TestSize" -> 100, 
-              "TrainingSize" -> 10, "TrainingTime" -> 0.191003, 
-              "TrainingMemory" -> 3414344, "ModelMemory" -> 1959704, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 
-              0.00047705073668896555`, "MeanCrossEntropyHistory" -> {
-                PlusMinus[626.3974905328771, 59.35784123300911]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.4405940594059407, 0.049585758966034954`]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[62.55490269259222, 25.455175908592455`], "Accuracy" -> 
-              PlusMinus[0.7970297029702981, 0.057534317580964334`], 
-              "EvaluationTime" -> 0.02027485, "TestSize" -> 100, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.458669, 
-              "TrainingMemory" -> 10481192, "ModelMemory" -> 2772064, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.003902527300151527, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[62.55490269259222, 17.99952750126216]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7970297029702981, 0.04068290611244028]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.02027485, "MeanCrossEntropy" -> 
-             PlusMinus[62.55490269259222, 25.455175908592455`], "ModelMemory" -> 
-             2772064, "TrainingMemory" -> 10481192, "TrainingTime" -> 
-             12.281517840000001`], "Index" -> 1], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 1.*^-6], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[1.7696862992034337`, 0.2630153549720799], "Accuracy" -> 
-              PlusMinus[0.7504267742235872, 0.02756464231513558], 
-              "EvaluationTime" -> 0.000075806, "TestSize" -> 500, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.161756, 
-              "TrainingMemory" -> 5916456, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.23702986888284902`, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[1.7696862992034337`, 0.18597994105694463`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7504267742235872, 0.019491145502014022`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.000075806, "MeanCrossEntropy" -> 
-             PlusMinus[1.7696862992034337`, 0.2630153549720799], 
-             "ModelMemory" -> 23416, "TrainingMemory" -> 5916456, 
-             "TrainingTime" -> 4.425644160000001], "Index" -> 2], 
-         Association[
-          "Value" -> "DecisionTree", "Options" -> 
-           Association[
-            "DistributionSmoothing" -> Association["Value" -> 1], 
-             "FeatureFraction" -> Association["Value" -> 1]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[1.0408000973438973`, 0.058375551866636365`], 
-              "Accuracy" -> 
-              PlusMinus[0.613661015675263, 0.020758882714790112`], 
-              "EvaluationTime" -> 0.00003236363636363636, "TestSize" -> 1100, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.124547, 
-              "TrainingMemory" -> 3246648, "ModelMemory" -> 5480, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.41040285783112096`, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[1.0408000973438973`, 0.041277748580405595`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.613661015675263, 0.014678746737484294`]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.9466368178702058, 0.046051371962542546`], 
-              "Accuracy" -> 
-              PlusMinus[0.6957366868270272, 0.013762723415785246`], 
-              "EvaluationTime" -> 8.420840787119857*^-6, "TestSize" -> 2236, 
-              "TrainingSize" -> 400, "TrainingTime" -> 1.393329, 
-              "TrainingMemory" -> 21373768, "ModelMemory" -> 5992, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.4518910978446928, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.9466368178702058, 0.03256323739765788]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.6957366868270272, 0.00973171505489663]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 8.420840787119857*^-6, "MeanCrossEntropy" -> 
-             PlusMinus[0.9466368178702058, 0.046051371962542546`], 
-             "ModelMemory" -> 5992, "TrainingMemory" -> 21373768, 
-             "TrainingTime" -> 9.30658511], "Index" -> 3], 
-         Association[
-          "Value" -> "NearestNeighbors", "Options" -> 
-           Association[
-            "NeighborsNumber" -> Association["Value" -> Automatic], 
-             "DistributionSmoothing" -> Association["Value" -> 0.5], 
-             "NearestMethod" -> Association["Value" -> Automatic]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.5584479032848296, 0.039503370310990604`], 
-              "Accuracy" -> 
-              PlusMinus[0.7196427080037227, 0.04510752286799666], 
-              "EvaluationTime" -> 0.000353995, "TestSize" -> 200, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.013982, 
-              "TrainingMemory" -> 4799264, "ModelMemory" -> 1596136, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.7177157956321562, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.5584479032848296, 0.027933101026624788`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7196427080037227, 0.0318958353024877]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.49085781518423344`, 0.02937269380938586], 
-              "Accuracy" -> 
-              PlusMinus[0.7711064747531361, 0.029949220535889887`], 
-              "EvaluationTime" -> 0.0001534575, "TestSize" -> 400, 
-              "TrainingSize" -> 400, "TrainingTime" -> 0.189029, 
-              "TrainingMemory" -> 34405112, "ModelMemory" -> 10607984, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.6506580722383594, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.49085781518423344`, 0.020769630974332865`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7711064747531361, 0.021177296932179145`]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.4808903886874639, 0.028281102219721622`], 
-              "Accuracy" -> 
-              PlusMinus[0.7608877907021546, 0.026450229565192124`], 
-              "EvaluationTime" -> 0.0005166565464895637, "TestSize" -> 527, 
-              "TrainingSize" -> 2109, "TrainingTime" -> 1.20996, 
-              "TrainingMemory" -> 170527104, "ModelMemory" -> 55906680, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.5373301654779816, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.4808903886874639, 0.019997759158995078`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7608877907021546, 0.018703136689488257`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.0005166565464895637, "MeanCrossEntropy" -> 
-             PlusMinus[0.4808903886874639, 0.028281102219721622`], 
-             "ModelMemory" -> 55906680, "TrainingMemory" -> 170527104, 
-             "TrainingTime" -> 1.5262885718349928`], "Index" -> 4], 
-         Association[
-          "Value" -> "RandomForest", "Options" -> 
-           Association[
-            "FeatureFraction" -> Association["Value" -> Automatic], 
-             "LeafSize" -> Association["Value" -> Automatic], "TreeNumber" -> 
-             Association["Value" -> Automatic], "DistributionSmoothing" -> 
-             Association["Value" -> 0.5], "Implementation" -> 
-             Association["Value" -> Automatic]]] -> Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.5667299580699804, 0.022370506002929696`], 
-              "Accuracy" -> 
-              PlusMinus[0.7485092009518018, 0.04368692114850365], 
-              "EvaluationTime" -> 0.00035230499999999997`, "TestSize" -> 200, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.018851, 
-              "TrainingMemory" -> 2536432, "ModelMemory" -> 86368, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.7561755788056265, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.5667299580699804, 0.015818336493245957`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7485092009518018, 0.030891318193268923`]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.5405676674445428, 0.022122608445053815`], 
-              "Accuracy" -> 
-              PlusMinus[0.7828754511611573, 0.04162692457636252], 
-              "EvaluationTime" -> 0.000733635, "TestSize" -> 200, 
-              "TrainingSize" -> 400, "TrainingTime" -> 0.127428, 
-              "TrainingMemory" -> 16116768, "ModelMemory" -> 98576, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.7925419415606516, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.5405676674445428, 0.015643046449032336`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7828754511611573, 0.02943468064788689]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.5123700714717752, 0.014114316632397896`], 
-              "Accuracy" -> 
-              PlusMinus[0.8131197129988257, 0.02430454082002673], 
-              "EvaluationTime" -> 0.00034055787476280837`, "TestSize" -> 527, 
-              "TrainingSize" -> 2109, "TrainingTime" -> 0.824485, 
-              "TrainingMemory" -> 84534320, "ModelMemory" -> 157456, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.8383721650875179, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.5123700714717752, 0.009980329002582626]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.8131197129988257, 0.017185905627466153`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.00034055787476280837`, "MeanCrossEntropy" -> 
-             PlusMinus[0.5123700714717752, 0.014114316632397896`], 
-             "ModelMemory" -> 157456, "TrainingMemory" -> 84534320, 
-             "TrainingTime" -> 1.0493595158843054`], "Index" -> 5], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 1.*^6], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.6921628214338017, 0.002519318118565382], "Accuracy" -> 
-              PlusMinus[0.49694685817600576`, 0.022247196168132338`], 
-              "EvaluationTime" -> 0.000047106000000000006`, "TestSize" -> 
-              1000, "TrainingSize" -> 60, "TrainingTime" -> 0.175966, 
-              "TrainingMemory" -> 5945312, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.6235856757645747, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.6921628214338017, 0.001781426925603716]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.49694685817600576`, 0.01573114327287375]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.000047106000000000006`, "MeanCrossEntropy" -> 
-             PlusMinus[0.6921628214338017, 0.002519318118565382], 
-             "ModelMemory" -> 23416, "TrainingMemory" -> 5945312, 
-             "TrainingTime" -> 4.81442976], "Index" -> 6], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 0.001], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[1.2096416505698984`, 0.10740502858364868`], 
-              "Accuracy" -> 
-              PlusMinus[0.7268315008827593, 0.01906298268843826], 
-              "EvaluationTime" -> 0.00004934181818181819, "TestSize" -> 1100, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.160616, 
-              "TrainingMemory" -> 5905160, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.35084808139125223`, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[1.2096416505698984`, 0.07594682404503295]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7268315008827593, 0.013479564328636456`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.00004934181818181819, "MeanCrossEntropy" -> 
-             PlusMinus[1.2096416505698984`, 0.10740502858364868`], 
-             "ModelMemory" -> 23416, "TrainingMemory" -> 5905160, 
-             "TrainingTime" -> 4.39445376], "Index" -> 7], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 10000.], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.6590946958846948, 0.022231162357810558`], 
-              "Accuracy" -> 
-              PlusMinus[0.46039603960396064`, 0.07042869408830643], 
-              "EvaluationTime" -> 0.001018, "TestSize" -> 100, "TrainingSize" -> 
-              60, "TrainingTime" -> 0.065062, "TrainingMemory" -> 5893320, 
-              "ModelMemory" -> 23416, "ExperimentCount" -> 1, "ModelUtility" -> 
-              0.6492037826522169, "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.6590946958846948, 0.01571980565686696]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.46039603960396064`, 0.04980060717995439]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.001018, "MeanCrossEntropy" -> 
-             PlusMinus[0.6590946958846948, 0.022231162357810558`], 
-             "ModelMemory" -> 23416, "TrainingMemory" -> 5893320, 
-             "TrainingTime" -> 1.78009632], "Index" -> 8], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 0.1], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.808485319814899, 0.06243340083107367], "Accuracy" -> 
-              PlusMinus[0.7308434684396451, 0.018161737347934137`], 
-              "EvaluationTime" -> 0.000038570833333333333`, "TestSize" -> 
-              1200, "TrainingSize" -> 60, "TrainingTime" -> 0.089637, 
-              "TrainingMemory" -> 5893352, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.5261288163028572, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.808485319814899, 0.04414708110019002]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7308434684396451, 0.012842287636853212`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.000038570833333333333`, "MeanCrossEntropy" -> 
-             PlusMinus[0.808485319814899, 0.06243340083107367], "ModelMemory" -> 
-             23416, "TrainingMemory" -> 5893352, "TrainingTime" -> 
-             2.45246832], "Index" -> 9], 
-         Association[
-          "Value" -> "LogisticRegression", "Options" -> 
-           Association[
-            "L1Regularization" -> Association["Value" -> 0], 
-             "L2Regularization" -> Association["Value" -> 1000.], 
-             "OptimizationMethod" -> Association["Value" -> Automatic], 
-             MaxIterations -> Association["Value" -> 30]]] -> 
-         Association["Experiments" -> {
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.5632621750805068, 0.011383243028356615`], 
-              "Accuracy" -> 
-              PlusMinus[0.7207258878224069, 0.018308755230098523`], 
-              "EvaluationTime" -> 0.00003894416666666667, "TestSize" -> 1200, 
-              "TrainingSize" -> 60, "TrainingTime" -> 0.066548, 
-              "TrainingMemory" -> 5893144, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.7637619351952422, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.5632621750805068, 0.008049168337245453]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7207258878224069, 0.012946244978287334`]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.45093225542433485`, 0.011185157583364165`], 
-              "Accuracy" -> 
-              PlusMinus[0.7907186881192755, 0.012342929127432758`], 
-              "EvaluationTime" -> 0.000043036363636363635`, "TestSize" -> 
-              2200, "TrainingSize" -> 400, "TrainingTime" -> 0.397637, 
-              "TrainingMemory" -> 31833376, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 0.9531471727810479, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.45093225542433485`, 0.007909100775836937]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.7907186881192755, 0.008727768885712658]}], 
-             Association[
-             "MeanCrossEntropy" -> 
-              PlusMinus[0.39567742736326533`, 0.02499348208736278], 
-              "Accuracy" -> 
-              PlusMinus[0.8347351452546032, 0.022983890974224565`], 
-              "EvaluationTime" -> 0.00005449905123339658, "TestSize" -> 527, 
-              "TrainingSize" -> 2109, "TrainingTime" -> 1.53818, 
-              "TrainingMemory" -> 167720792, "ModelMemory" -> 23416, 
-              "ExperimentCount" -> 1, "ModelUtility" -> 1.0780203612138233`, 
-              "MeanCrossEntropyHistory" -> {
-                PlusMinus[0.39567742736326533`, 0.017673060669438728`]}, 
-              "AccuracyHistory" -> {
-                PlusMinus[0.8347351452546032, 0.016252065165926474`]}]}, 
-           "PredictedPerformances" -> 
-           Association[
-            "EvaluationTime" -> 0.00005449905123339658, "MeanCrossEntropy" -> 
-             PlusMinus[0.39567742736326533`, 0.02499348208736278], 
-             "ModelMemory" -> 23416, "TrainingMemory" -> 167720792, 
-             "TrainingTime" -> 1.9890906647700335`], "Index" -> 10]], 
-        TypeSystem`Assoc[
-         TypeSystem`Struct[{"Value", "Options"}, {
-           TypeSystem`Atom[
-            TypeSystem`Enumeration[
-            "DecisionTree", "LogisticRegression", "NaiveBayes", 
-             "NearestNeighbors", "RandomForest"]], 
-           TypeSystem`Assoc[TypeSystem`AnyType, 
-            TypeSystem`Struct[{"Value"}, {TypeSystem`AnyType}], 
-            TypeSystem`AnyLength]}], 
-         TypeSystem`Struct[{"Experiments", "PredictedPerformances", "Index"}, {
-           TypeSystem`Vector[
-            
-            TypeSystem`Struct[{
-             "MeanCrossEntropy", "Accuracy", "EvaluationTime", "TestSize", 
-              "TrainingSize", "TrainingTime", "TrainingMemory", "ModelMemory",
-               "ExperimentCount", "ModelUtility", "MeanCrossEntropyHistory", 
-              "AccuracyHistory"}, {TypeSystem`AnyType, TypeSystem`AnyType, 
-              TypeSystem`Atom[Real], 
-              TypeSystem`Atom[Integer], 
-              TypeSystem`Atom[Integer], 
-              TypeSystem`Atom[Real], 
-              TypeSystem`Atom[Integer], 
-              TypeSystem`Atom[Integer], 
-              TypeSystem`Atom[Integer], 
-              TypeSystem`Atom[Real], 
-              TypeSystem`Vector[TypeSystem`AnyType, 1], 
-              TypeSystem`Vector[TypeSystem`AnyType, 1]}], 
-            TypeSystem`AnyLength], 
-           
-           TypeSystem`Struct[{
-            "EvaluationTime", "MeanCrossEntropy", "ModelMemory", 
-             "TrainingMemory", "TrainingTime"}, {
-             TypeSystem`Atom[Real], TypeSystem`AnyType, 
-             TypeSystem`Atom[Integer], 
-             TypeSystem`Atom[Integer], 
-             TypeSystem`Atom[Real]}], 
-           TypeSystem`Atom[Integer]}], 10], 
-        Association["ID" -> 193479829485875]], "MaxTrainingSize" -> 2636, 
-      "LastReportingTime" -> 3.740258866898283`16.325476650337674*^9, 
-      "PreprocessorEvaluationTime" -> 4.4404296875`2.*^-6, 
-      "PreprocessorMemory" -> 47480, "RoundPartitioning" -> Dataset[{
-         Association[
-         "TrainingSizes" -> 10, "TimeBudgets" -> 1.8830973807519698`, 
-          "ElapsedTimes" -> 1.445498, "ExperimentCounts" -> 1], 
-         Association[
-         "TrainingSizes" -> 60, "TimeBudgets" -> 2.3538717259399613`, 
-          "ElapsedTimes" -> 4.9825230000000005`, "ExperimentCounts" -> 10], 
-         Association[
-         "TrainingSizes" -> 400, "TimeBudgets" -> 2.942339657424953, 
-          "ElapsedTimes" -> 3.1022549999999995`, "ExperimentCounts" -> 4], 
-         Association[
-         "TrainingSizes" -> 2109, "TimeBudgets" -> 3.67792457178119, 
-          "ElapsedTimes" -> 4.4007000000000005`, "ExperimentCounts" -> 3]}, 
-        TypeSystem`Vector[
-         TypeSystem`Struct[{
-          "TrainingSizes", "TimeBudgets", "ElapsedTimes", 
-           "ExperimentCounts"}, {
-           TypeSystem`Atom[Integer], 
-           TypeSystem`Atom[Real], 
-           TypeSystem`Atom[Real], 
-           TypeSystem`Atom[Integer]}], 4], 
-        Association[
-        "Origin" -> HoldComplete[GeneralUtilities`AssociationTranspose, 
-           Dataset`DatasetHandle[193488419420467]], "ID" -> 
-         193492714387763]]], "Log" -> 
-    Association["Example" -> MachineLearning`MLDataset[
-        Association[
-        "f1" -> Association["Type" -> "Image", "Weight" -> 1, "Values" -> {
-             Image[CompressedData["
-1:eJztlk1KA0EQhQcV8RreQdyKV4gniBBXghAX4j08qEcwWbgZ0qk0NVXvVc9r
-yO/X1fW6/pL714/N29U0TZ93h6fN9ut5v99+v9weP+y2748Pu+vD2+PHn8Pj
-Zvpfv0/TyWV9P3+91D76fLS9ly+tv7U/Sr/FlR+fvZd76yO7/3v1RZ8/uj70
-/GGfX9GcLX/o+cSmv3p8es9v7We17z2/Wv5Gn4/s/R/tn72/e89n06/8nPez
-9Pmt/aPaezl6fmXz7P5Dxxetf7T7t/ZX0c/W39Xvx15f7PEd/f9B7/ls/Wlx
-9vqK9l+tftHxbe1XfmL09fpv7We1r8atfIuLi4uLj83ny/q+dZ5lH31+tL5o
-/2h7L19af2t/Ff3V45+t3+Ls9YXWx34/tH/FF8urzye2+mOLH/p+Xo6eD+j/
-P9GcvT7Q+ka/n5ej+2v0/uzlVj2Ii1/C54t1vrLNP6/+1v4q+qvHP1u/xdnv
-h9aHzp/632fv5dX1ezl7/UmfT180r94/6Pyx+c+2j+bo/GTry7avzrPnj+VP
-XFzcz+crqv+z58fS/tHzX/H32Xs5e/1In09fNGevf7Q+9bePK/4++2jOXl/S
-59OH5tX7B51fNv/Z9tEcXV8Wz9Zn+RMXXwOfL1R/Lj3/s+cb+vcrW99ovx/o
-+62tftamL5qj63/t+WXXF83Z6k/z2+d/7fGvrr+1X/ow+ti5+uc0vzT/bP6z
-7aM5ur4snq3P8sfL/wB7jaU5
-              "], "Real", ColorSpace -> "RGB", 
-              Interleaving -> True]}, "ID" -> 8648384402107197552]], 
-        Association[
-        "ExampleNumber" -> 1, "ExampleWeights" -> 1, "RawExample" -> False]], 
-      "TrainingTime" -> 17.816024, "MaxTrainingMemory" -> 242907104, 
-      "DataMemory" -> 122578760, "FunctionMemory" -> 245712, 
-      "LanguageVersion" -> {11.3, 0}, "Date" -> 
-      DateObject[{2018, 7, 11, 0, 47, 46.957503`8.424279971536146}, "Instant",
-         "Gregorian", -4.], "ProcessorCount" -> 2, "ProcessorType" -> 
-      "x86-64", "OperatingSystem" -> "MacOSX", "SystemWordLength" -> 64, 
-      "Evaluations" -> {}]]],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{3.740055492571032*^9, 3.740055755408944*^9, 
-  3.740061193660914*^9, 3.740061456906011*^9, 3.7402705069951153`*^9, 
-  3.740273266994573*^9},
+ TemplateBox[{
+  "MapThread","mptd",
+   "\"Object \\!\\(\\*RowBox[{RowBox[{\\\"LinearLayer\\\", \\\"[\\\", \
+RowBox[{\\\"1\\\", \\\",\\\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\
+\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00003566852949947084`\\\"}], \\\",\\\", \\\"0.0008521418362738749`\\\", \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2344\\\", \
+\\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\\\", RowBox[{\
+\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \\\"0.`\\\
+\", \\\"}\\\"}]}], \\\",\\\", RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\
+\[Rule]\\\", \\\"2394\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"18\\\", \\\"\[RightSkeleton]\\\"}], \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]\\) at position {2, \\!\\(\\*RowBox[{\\\"1\\\"}]\\)} in \
+\\!\\(\\*RowBox[{\\\"MapThread\\\", \\\"[\\\", RowBox[{\\\"PDF\\\", \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"LinearLayer\\\", \\\
+\"[\\\", RowBox[{\\\"1\\\", \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"47\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394\\\"}]}], \
+\\\"]\\\"}], \\\"[\\\", RowBox[{\\\"NormalDistribution\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\
+\", \\\"19\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}], \\\",\
+\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) has only \
+\\!\\(\\*RowBox[{\\\"0\\\"}]\\) of required \\!\\(\\*RowBox[{\\\"1\\\"}]\\) \
+dimensions.\"",2,195,43,19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410673848444*^9},
  CellLabel->
-  "Out[192]=",ExpressionUUID->"f1bfa93d-661d-41db-a54f-5d92031113eb"]
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"162b57eb-5815-4186-9e8c-5e8fd0421c7c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Join","heads",
+   "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"LinearLayer\\\", \\\"[\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\
+\\\"{\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\
+\", RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\
+\\\"-\\\", \\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00003566852949947084`\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394\\\"}]}], \
+\\\"]\\\"}]\\) at positions \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"2\\\"}]\\) are expected to be the same.\"",2,195,44,
+   19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7404106739406757`*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"2e9fcc61-3c1b-4a71-83b3-f9ebdb71fa7a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Join","heads",
+   "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"LinearLayer\\\", \\\"[\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\
+\\\"{\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\
+\", RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\
+\\\"-\\\", \\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00003566852949947084`\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394\\\"}]}], \
+\\\"]\\\"}]\\) at positions \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"2\\\"}]\\) are expected to be the same.\"",2,195,45,
+   19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410674054241*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"062df0c9-b2ec-4c17-832b-d47184c511a1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Join","heads",
+   "\"Heads \\!\\(\\*RowBox[{\\\"List\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"LinearLayer\\\", \\\"[\\\", RowBox[{\\\"1.`\\\", \\\",\\\
+\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00003566852949947084`\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394.`\\\"}]}], \
+\\\"]\\\"}]\\) at positions \\!\\(\\*RowBox[{\\\"1\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"2\\\"}]\\) are expected to be the same.\"",2,195,46,
+   19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410674187406*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"7ad02c94-724b-4d49-899d-36e8b6e9b445"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Join\\\", \\\"::\\\", \
+\\\"heads\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,195,47,19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410674405827*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"0829abcf-c251-4fd3-89d6-359687ff4d3b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "MapThread","mptd",
+   "\"Object \\!\\(\\*RowBox[{RowBox[{\\\"LinearLayer\\\", \\\"[\\\", \
+RowBox[{\\\"1\\\", \\\",\\\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\
+\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00003566852949947084`\\\"}], \\\",\\\", \\\"0.0008521418362738749`\\\", \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2344\\\", \
+\\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\\\", RowBox[{\
+\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \\\"0.`\\\
+\", \\\"}\\\"}]}], \\\",\\\", RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\
+\[Rule]\\\", \\\"2394\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"18\\\", \\\"\[RightSkeleton]\\\"}], \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]\\) at position {2, \\!\\(\\*RowBox[{\\\"1\\\"}]\\)} in \
+\\!\\(\\*RowBox[{\\\"MapThread\\\", \\\"[\\\", RowBox[{\\\"PDF\\\", \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"LinearLayer\\\", \\\
+\"[\\\", RowBox[{\\\"1\\\", \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"47\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394\\\"}]}], \
+\\\"]\\\"}], \\\"[\\\", RowBox[{\\\"NormalDistribution\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\
+\", \\\"19\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}], \\\",\
+\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) has only \
+\\!\\(\\*RowBox[{\\\"0\\\"}]\\) of required \\!\\(\\*RowBox[{\\\"1\\\"}]\\) \
+dimensions.\"",2,195,48,19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410674587319*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"0f91dde6-e7a5-417e-b3dd-f8b28b2d29ab"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "MapThread","mptd",
+   "\"Object \\!\\(\\*RowBox[{RowBox[{\\\"LinearLayer\\\", \\\"[\\\", \
+RowBox[{\\\"1.`\\\", \\\",\\\", RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\
+\[Rule]\\\", RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00039061739487909026`\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"45\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"-\\\", \
+\\\"0.00003566852949947084`\\\"}], \\\",\\\", \\\"0.0008521418362738749`\\\", \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2344\\\", \
+\\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\\\", RowBox[{\
+\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \\\"0.`\\\
+\", \\\"}\\\"}]}], \\\",\\\", RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\
+\[Rule]\\\", \\\"2394.`\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]\\) at \
+position {2, \\!\\(\\*RowBox[{\\\"1\\\"}]\\)} in \
+\\!\\(\\*RowBox[{\\\"MapThread\\\", \\\"[\\\", RowBox[{\\\"PDF\\\", \
+\\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"LinearLayer\\\", \\\
+\"[\\\", RowBox[{\\\"1.`\\\", \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Weights\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"0.0006843763279535648`\\\", \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.00039061739487909026`\\\"}], \\\",\\\", \
+RowBox[{\\\"-\\\", \\\"0.0006565252048462229`\\\"}], \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"46\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \
+\\\"0.0008521418362738749`\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2344\\\", \\\"\[RightSkeleton]\\\"}]}], \\\"}\\\"}], \\\"}\\\"}]}], \\\",\
+\\\", RowBox[{\\\"\\\\\\\"Biases\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"{\\\", \\\"0.`\\\", \\\"}\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Input\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"2394.`\\\"}]}], \
+\\\"]\\\"}], \\\"[\\\", RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"18\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\
+\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]}], \\\"]\\\"}]\\) has only \\!\\(\\*RowBox[{\\\"0\\\"}]\\) of \
+required \\!\\(\\*RowBox[{\\\"1\\\"}]\\) dimensions.\"",2,195,49,
+   19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740410674769923*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"740771b5-070b-45cf-963f-3e65c6ddda6e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"MapThread\\\", \\\"::\\\
+\", \\\"mptd\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,195,50,19907999721086255986,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7404106749216623`*^9},
+ CellLabel->
+  "During evaluation of \
+In[195]:=",ExpressionUUID->"ce68891e-ca90-40ad-8e55-bf101fc40564"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -29784,15 +29270,28 @@ Cell[BoxData[
  CellLabel->"Out[4]=",ExpressionUUID->"c1e1cecf-e291-4f98-8b1e-d7387d979d2c"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7400562888976603`*^9, 
   3.740056295819421*^9}},ExpressionUUID->"2a5c6e77-c9d3-4061-b5ad-\
-fb55ef6b8649"]
+fb55ef6b8649"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.740410473057482*^9, 3.74041057902695*^9},
+ CellLabel->
+  "Out[190]=",ExpressionUUID->"68281efa-b902-4950-8e8b-525fd378305d"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.740410753096444*^9},
+ CellLabel->
+  "Out[195]=",ExpressionUUID->"9ed4973f-4533-45b5-b89a-6b357161fe92"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 855},
-WindowMargins->{{Automatic, 264}, {Automatic, 0}},
+WindowMargins->{{Automatic, 67}, {Automatic, 1}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 7, \
 2018)",
@@ -29813,95 +29312,122 @@ Cell[CellGroupData[{
 Cell[583, 22, 172, 2, 37, "Input",ExpressionUUID->"d065a3b0-6e3c-4842-a214-43aca7e85a0b"],
 Cell[758, 26, 149, 2, 42, "Output",ExpressionUUID->"509e737d-1e79-4838-9ed2-a70e28c61f60"]
 }, Open  ]],
-Cell[922, 31, 346, 7, 37, "Input",ExpressionUUID->"36142c88-8b2d-4037-a5a5-df62e3a30e0a"],
-Cell[1271, 40, 310, 7, 37, "Input",ExpressionUUID->"791bd827-d7ed-4ece-aecf-6c251c14d3d9"],
+Cell[922, 31, 428, 8, 37, "Input",ExpressionUUID->"36142c88-8b2d-4037-a5a5-df62e3a30e0a"],
+Cell[1353, 41, 310, 7, 37, "Input",ExpressionUUID->"791bd827-d7ed-4ece-aecf-6c251c14d3d9"],
 Cell[CellGroupData[{
-Cell[1606, 51, 77, 0, 67, "Subsection",ExpressionUUID->"347ef978-102c-446c-aebb-3e07cac1d6c8"],
-Cell[1686, 53, 276, 6, 37, "Input",ExpressionUUID->"aa95c0db-44c0-4376-9b41-6081f4b252e3"],
-Cell[1965, 61, 379, 9, 116, "Input",ExpressionUUID->"4e9f8d9e-27b0-43b4-8d99-feaf8db93171"],
+Cell[1688, 52, 77, 0, 67, "Subsection",ExpressionUUID->"347ef978-102c-446c-aebb-3e07cac1d6c8"],
+Cell[1768, 54, 276, 6, 37, "Input",ExpressionUUID->"aa95c0db-44c0-4376-9b41-6081f4b252e3"],
 Cell[CellGroupData[{
-Cell[2369, 74, 825, 23, 116, "Input",ExpressionUUID->"3a8561dd-d3cc-45c7-be4c-cbec212850e0"],
-Cell[3197, 99, 393, 7, 42, "Output",ExpressionUUID->"7672fba6-ee0c-4248-9822-3d273e476dbf"],
-Cell[3593, 108, 396, 7, 42, "Output",ExpressionUUID->"63e63a2f-efaa-4558-a03f-55498f18e89a"]
-}, Open  ]],
-Cell[4004, 118, 277, 7, 37, "Input",ExpressionUUID->"62d2b983-19f2-42a8-b5ff-e8eb67107879"],
-Cell[CellGroupData[{
-Cell[4306, 129, 232, 4, 37, "Input",ExpressionUUID->"0a7c6f10-292d-4185-b2d1-8ceef08298db"],
-Cell[4541, 135, 911, 26, 69, "Output",ExpressionUUID->"b9c19ef2-d226-4172-bd47-75873c231f37"]
-}, Open  ]],
-Cell[5467, 164, 930, 25, 90, "Input",ExpressionUUID->"22416634-4d0e-4bd7-b709-13ae60b07756"],
-Cell[6400, 191, 899, 25, 90, "Input",ExpressionUUID->"f7de1c0f-cbd2-4f02-b4ee-964e9ec022bb"],
-Cell[7302, 218, 422, 10, 37, "Input",ExpressionUUID->"a14ad5af-e780-4a85-b5e7-48e1b99e2e65"],
-Cell[7727, 230, 367, 9, 116, "Input",ExpressionUUID->"a47580f4-b0b5-4026-b5c5-55598c648a81"],
-Cell[CellGroupData[{
-Cell[8119, 243, 318, 6, 37, "Input",ExpressionUUID->"6aece15b-8a30-4e27-ba06-1cea0014de0d"],
-Cell[8440, 251, 64010, 1156, 79, "Output",ExpressionUUID->"f1bfa93d-661d-41db-a54f-5d92031113eb"]
+Cell[2069, 64, 154, 3, 37, "Input",ExpressionUUID->"8d594566-9687-478b-b6d5-6bcd3f56d62d"],
+Cell[2226, 69, 153, 3, 42, "Output",ExpressionUUID->"5804b4e5-fe8d-446c-aa90-736799c3aef6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[72487, 1412, 288, 6, 37, "Input",ExpressionUUID->"262a22ce-95b9-4916-91cb-83db3ae81c8e"],
-Cell[72778, 1420, 194, 3, 42, "Output",ExpressionUUID->"41a18928-7775-4648-805b-8399c73e6bc3"]
-}, Open  ]],
-Cell[72987, 1426, 416, 10, 131, "Text",ExpressionUUID->"d100c8d7-7e1c-4aac-be28-927954621db1"],
-Cell[CellGroupData[{
-Cell[73428, 1440, 412, 8, 64, "Input",ExpressionUUID->"f690600b-a1ce-4044-b5d0-49233ad4ffc4"],
-Cell[73843, 1450, 1130225, 20097, 79, "Output",ExpressionUUID->"df6fa1ba-0d94-4f29-b76c-9176e04e16c9"]
+Cell[2416, 77, 181, 3, 37, "Input",ExpressionUUID->"3327e9d0-9e5f-406d-88de-4c7841ac705b"],
+Cell[2600, 82, 12646, 326, 332, "Output",ExpressionUUID->"6a9d6eeb-c1e4-49f0-bf2a-52641a9eb930"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1204105, 21552, 283, 5, 37, "Input",ExpressionUUID->"4809a191-2732-419b-a447-24a6332b49e6"],
-Cell[1204391, 21559, 220, 4, 42, "Output",ExpressionUUID->"917b889c-b684-427c-a807-9b08346e3ff3"]
+Cell[15283, 413, 251, 6, 37, "Input",ExpressionUUID->"09624423-3565-40eb-91ee-18cb03aa8ad2"],
+Cell[15537, 421, 180, 3, 42, "Output",ExpressionUUID->"bd052712-2625-4a1e-afc2-3fe661ad16a9"]
+}, Open  ]],
+Cell[15732, 427, 379, 9, 116, "Input",ExpressionUUID->"4e9f8d9e-27b0-43b4-8d99-feaf8db93171"],
+Cell[CellGroupData[{
+Cell[16136, 440, 933, 26, 116, "Input",ExpressionUUID->"3a8561dd-d3cc-45c7-be4c-cbec212850e0"],
+Cell[17072, 468, 465, 8, 42, "Output",ExpressionUUID->"f76c159b-db5e-4e8a-a2eb-9ea4d0bc52af"],
+Cell[17540, 478, 467, 8, 42, "Output",ExpressionUUID->"5d9aa562-1f78-4753-a391-e605291f5f97"]
+}, Open  ]],
+Cell[18022, 489, 277, 7, 37, "Input",ExpressionUUID->"62d2b983-19f2-42a8-b5ff-e8eb67107879"],
+Cell[CellGroupData[{
+Cell[18324, 500, 232, 4, 37, "Input",ExpressionUUID->"0a7c6f10-292d-4185-b2d1-8ceef08298db"],
+Cell[18559, 506, 911, 26, 69, "Output",ExpressionUUID->"b9c19ef2-d226-4172-bd47-75873c231f37"]
+}, Open  ]],
+Cell[19485, 535, 930, 25, 90, "Input",ExpressionUUID->"22416634-4d0e-4bd7-b709-13ae60b07756"],
+Cell[20418, 562, 899, 25, 90, "Input",ExpressionUUID->"f7de1c0f-cbd2-4f02-b4ee-964e9ec022bb"],
+Cell[21320, 589, 471, 10, 37, "Input",ExpressionUUID->"a14ad5af-e780-4a85-b5e7-48e1b99e2e65"],
+Cell[21794, 601, 477, 11, 116, "Input",ExpressionUUID->"a47580f4-b0b5-4026-b5c5-55598c648a81"],
+Cell[22274, 614, 186, 3, 37, "Input",ExpressionUUID->"887f22dc-8ee5-4b45-a2bf-b230f9cca1a7"],
+Cell[22463, 619, 590, 15, 37, "Input",ExpressionUUID->"d74903b1-cfde-4891-8808-f2d881c017ef"],
+Cell[23056, 636, 190, 3, 37, "Input",ExpressionUUID->"79100d01-1191-495b-9075-5988645ddb92"],
+Cell[23249, 641, 382, 9, 116, "Input",ExpressionUUID->"bddf4700-a17e-41e2-9f0b-e3e7661f79db"],
+Cell[CellGroupData[{
+Cell[23656, 654, 288, 6, 37, "Input",ExpressionUUID->"d97c793d-c340-4830-947c-16593e6a5173"],
+Cell[23947, 662, 2860, 43, 155, "Message",ExpressionUUID->"162b57eb-5815-4186-9e8c-5e8fd0421c7c"],
+Cell[26810, 707, 1340, 23, 92, "Message",ExpressionUUID->"2e9fcc61-3c1b-4a71-83b3-f9ebdb71fa7a"],
+Cell[28153, 732, 1338, 23, 92, "Message",ExpressionUUID->"062df0c9-b2ec-4c17-832b-d47184c511a1"],
+Cell[29494, 757, 1342, 23, 92, "Message",ExpressionUUID->"7ad02c94-724b-4d49-899d-36e8b6e9b445"],
+Cell[30839, 782, 445, 10, 29, "Message",ExpressionUUID->"0829abcf-c251-4fd3-89d6-359687ff4d3b"],
+Cell[31287, 794, 2860, 43, 155, "Message",ExpressionUUID->"0f91dde6-e7a5-417e-b3dd-f8b28b2d29ab"],
+Cell[34150, 839, 2714, 42, 155, "Message",ExpressionUUID->"740771b5-070b-45cf-963f-3e65c6ddda6e"],
+Cell[36867, 883, 451, 10, 29, "Message",ExpressionUUID->"ce68891e-ca90-40ad-8e55-bf101fc40564"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1204648, 21568, 251, 5, 37, "Input",ExpressionUUID->"38993583-2230-491f-935c-e3cc2c020c0c"],
-Cell[1204902, 21575, 9570, 252, 401, "Output",ExpressionUUID->"de3538b8-32a8-4a40-901b-3df2ceaa8a88"]
+Cell[37355, 898, 288, 6, 37, "Input",ExpressionUUID->"262a22ce-95b9-4916-91cb-83db3ae81c8e"],
+Cell[37646, 906, 194, 3, 42, "Output",ExpressionUUID->"41a18928-7775-4648-805b-8399c73e6bc3"]
 }, Open  ]],
-Cell[1214487, 21830, 185, 3, 44, "Text",ExpressionUUID->"a4530a10-fb4a-4b36-a3dc-aded8a6fb6b9"],
-Cell[1214675, 21835, 332, 7, 37, "Input",ExpressionUUID->"123a0bcd-4889-4941-9600-8b638b0cb52d"],
+Cell[37855, 912, 416, 10, 131, "Text",ExpressionUUID->"d100c8d7-7e1c-4aac-be28-927954621db1"],
 Cell[CellGroupData[{
-Cell[1215032, 21846, 322, 6, 64, "Input",ExpressionUUID->"5059a71a-9fb3-4e16-ab25-9c263ece2efb"],
-Cell[1215357, 21854, 8581, 173, 102, "Output",ExpressionUUID->"2f0391ff-8a54-4620-9b1f-b0a7c61ace61"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1223975, 22032, 237, 4, 37, "Input",ExpressionUUID->"8cfb909b-e9a2-4139-b89a-becdb17d9626"],
-Cell[1224215, 22038, 170, 3, 42, "Output",ExpressionUUID->"7929c41b-8f60-4ee5-939b-2e57b0440943"]
-}, Open  ]],
-Cell[1224400, 22044, 383, 8, 37, "Input",ExpressionUUID->"4355184b-f4c3-4165-8fdf-091bda7335de"],
-Cell[CellGroupData[{
-Cell[1224808, 22056, 373, 7, 64, "Input",ExpressionUUID->"eece0a2d-a287-4725-8303-d9669fd5e6e5"],
-Cell[1225184, 22065, 8603, 173, 102, "Output",ExpressionUUID->"37b464bf-ea7e-4d5a-b6b6-446c1ac11a98"]
+Cell[38296, 926, 412, 8, 64, "Input",ExpressionUUID->"f690600b-a1ce-4044-b5d0-49233ad4ffc4"],
+Cell[38711, 936, 1130225, 20097, 79, "Output",ExpressionUUID->"df6fa1ba-0d94-4f29-b76c-9176e04e16c9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1233824, 22243, 286, 5, 37, "Input",ExpressionUUID->"cfd4b29d-6eb1-4e4b-9eab-0002f4a0a602"],
-Cell[1234113, 22250, 219, 4, 42, "Output",ExpressionUUID->"50fbe008-8990-461b-a146-0da5eb06caac"]
+Cell[1168973, 21038, 283, 5, 37, "Input",ExpressionUUID->"4809a191-2732-419b-a447-24a6332b49e6"],
+Cell[1169259, 21045, 220, 4, 42, "Output",ExpressionUUID->"917b889c-b684-427c-a807-9b08346e3ff3"]
 }, Open  ]],
-Cell[1234347, 22257, 152, 3, 37, "Input",ExpressionUUID->"8da13b3b-2d48-4f81-b3bd-d21729c15dc2"],
 Cell[CellGroupData[{
-Cell[1234524, 22264, 166, 3, 56, "Subsubsection",ExpressionUUID->"a400c7e4-8612-4f52-b87b-31da6ec988a0"],
+Cell[1169516, 21054, 251, 5, 37, "Input",ExpressionUUID->"38993583-2230-491f-935c-e3cc2c020c0c"],
+Cell[1169770, 21061, 9570, 252, 401, "Output",ExpressionUUID->"de3538b8-32a8-4a40-901b-3df2ceaa8a88"]
+}, Open  ]],
+Cell[1179355, 21316, 185, 3, 44, "Text",ExpressionUUID->"a4530a10-fb4a-4b36-a3dc-aded8a6fb6b9"],
+Cell[1179543, 21321, 332, 7, 37, "Input",ExpressionUUID->"123a0bcd-4889-4941-9600-8b638b0cb52d"],
 Cell[CellGroupData[{
-Cell[1234715, 22271, 430, 9, 64, "Input",ExpressionUUID->"9386a2b8-0585-4cae-a3c0-afc28e42c09d"],
-Cell[1235148, 22282, 80157, 2090, 34290, "Output",ExpressionUUID->"85315bc8-58cd-4d3a-a4b2-fb7660059377"]
+Cell[1179900, 21332, 322, 6, 64, "Input",ExpressionUUID->"5059a71a-9fb3-4e16-ab25-9c263ece2efb"],
+Cell[1180225, 21340, 8581, 173, 102, "Output",ExpressionUUID->"2f0391ff-8a54-4620-9b1f-b0a7c61ace61"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1188843, 21518, 237, 4, 37, "Input",ExpressionUUID->"8cfb909b-e9a2-4139-b89a-becdb17d9626"],
+Cell[1189083, 21524, 170, 3, 42, "Output",ExpressionUUID->"7929c41b-8f60-4ee5-939b-2e57b0440943"]
+}, Open  ]],
+Cell[1189268, 21530, 383, 8, 37, "Input",ExpressionUUID->"4355184b-f4c3-4165-8fdf-091bda7335de"],
+Cell[CellGroupData[{
+Cell[1189676, 21542, 373, 7, 64, "Input",ExpressionUUID->"eece0a2d-a287-4725-8303-d9669fd5e6e5"],
+Cell[1190052, 21551, 8603, 173, 102, "Output",ExpressionUUID->"37b464bf-ea7e-4d5a-b6b6-446c1ac11a98"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1198692, 21729, 286, 5, 37, "Input",ExpressionUUID->"cfd4b29d-6eb1-4e4b-9eab-0002f4a0a602"],
+Cell[1198981, 21736, 219, 4, 42, "Output",ExpressionUUID->"50fbe008-8990-461b-a146-0da5eb06caac"]
+}, Open  ]],
+Cell[1199215, 21743, 152, 3, 37, "Input",ExpressionUUID->"8da13b3b-2d48-4f81-b3bd-d21729c15dc2"],
+Cell[CellGroupData[{
+Cell[1199392, 21750, 166, 3, 56, "Subsubsection",ExpressionUUID->"a400c7e4-8612-4f52-b87b-31da6ec988a0"],
+Cell[CellGroupData[{
+Cell[1199583, 21757, 430, 9, 64, "Input",ExpressionUUID->"9386a2b8-0585-4cae-a3c0-afc28e42c09d"],
+Cell[1200016, 21768, 80157, 2090, 34290, "Output",ExpressionUUID->"85315bc8-58cd-4d3a-a4b2-fb7660059377"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1315354, 24378, 158, 3, 56, "Subsubsection",ExpressionUUID->"2681b080-1147-46cf-a18d-032eae06a87e"],
-Cell[1315515, 24383, 259, 6, 44, "Text",ExpressionUUID->"3e351c5e-a6e5-4c10-a68d-a5344d5366ca"],
+Cell[1280222, 23864, 158, 3, 56, "Subsubsection",ExpressionUUID->"2681b080-1147-46cf-a18d-032eae06a87e"],
+Cell[1280383, 23869, 259, 6, 44, "Text",ExpressionUUID->"3e351c5e-a6e5-4c10-a68d-a5344d5366ca"],
 Cell[CellGroupData[{
-Cell[1315799, 24393, 352, 7, 37, "Input",ExpressionUUID->"d01f1b50-9064-4be9-b73b-e010890b14ef"],
-Cell[1316154, 24402, 171023, 3207, 94, "Output",ExpressionUUID->"d45d19ae-be6c-41c8-bbdc-f42391a42467"]
+Cell[1280667, 23879, 352, 7, 37, "Input",ExpressionUUID->"d01f1b50-9064-4be9-b73b-e010890b14ef"],
+Cell[1281022, 23888, 171023, 3207, 94, "Output",ExpressionUUID->"d45d19ae-be6c-41c8-bbdc-f42391a42467"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1487214, 27614, 338, 7, 37, "Input",ExpressionUUID->"5fa692e9-c9c9-40ae-a190-da697612ac27"],
-Cell[1487555, 27623, 102740, 2053, 94, "Output",ExpressionUUID->"fcaab4c1-b590-4341-90ee-e11578af7755"]
+Cell[1452082, 27100, 338, 7, 37, "Input",ExpressionUUID->"5fa692e9-c9c9-40ae-a190-da697612ac27"],
+Cell[1452423, 27109, 102740, 2053, 94, "Output",ExpressionUUID->"fcaab4c1-b590-4341-90ee-e11578af7755"]
 }, Open  ]],
-Cell[1590310, 29679, 277, 5, 37, "Input",ExpressionUUID->"687230b3-5a7f-44ae-a0f4-97f16e2797d1"],
-Cell[1590590, 29686, 154, 3, 37, "Input",ExpressionUUID->"50a52e1e-5848-412d-ae99-7331c068b07f"],
-Cell[1590747, 29691, 652, 16, 90, "Input",ExpressionUUID->"0a063224-ca57-4855-a8bd-347658ac285e"],
+Cell[1555178, 29165, 277, 5, 37, "Input",ExpressionUUID->"687230b3-5a7f-44ae-a0f4-97f16e2797d1"],
+Cell[1555458, 29172, 154, 3, 37, "Input",ExpressionUUID->"50a52e1e-5848-412d-ae99-7331c068b07f"],
+Cell[1555615, 29177, 652, 16, 90, "Input",ExpressionUUID->"0a063224-ca57-4855-a8bd-347658ac285e"],
 Cell[CellGroupData[{
-Cell[1591424, 29711, 978, 26, 168, "Input",ExpressionUUID->"105b0a52-c94b-408a-8f3e-3a1014a91a3a"],
-Cell[1592405, 29739, 370, 9, 29, "Message",ExpressionUUID->"d5d1af06-a8a1-4488-a832-40e794b623d7"],
-Cell[1592778, 29750, 1303, 23, 70, "Message",ExpressionUUID->"8210f33d-5a16-4cef-9259-074228c72645"],
-Cell[1594084, 29775, 382, 8, 1940, "Output",ExpressionUUID->"c1e1cecf-e291-4f98-8b1e-d7387d979d2c"]
+Cell[1556292, 29197, 978, 26, 168, "Input",ExpressionUUID->"105b0a52-c94b-408a-8f3e-3a1014a91a3a"],
+Cell[1557273, 29225, 370, 9, 29, "Message",ExpressionUUID->"d5d1af06-a8a1-4488-a832-40e794b623d7"],
+Cell[1557646, 29236, 1303, 23, 71, "Message",ExpressionUUID->"8210f33d-5a16-4cef-9259-074228c72645"],
+Cell[1558952, 29261, 382, 8, 509, "Output",ExpressionUUID->"c1e1cecf-e291-4f98-8b1e-d7387d979d2c"]
 }, Open  ]],
-Cell[1594481, 29786, 154, 3, 139, "Input",ExpressionUUID->"2a5c6e77-c9d3-4061-b5ad-fb55ef6b8649"]
+Cell[CellGroupData[{
+Cell[1559371, 29274, 154, 3, 37, "Input",ExpressionUUID->"2a5c6e77-c9d3-4061-b5ad-fb55ef6b8649"],
+Cell[1559528, 29279, 181, 3, 42, "Output",ExpressionUUID->"68281efa-b902-4950-8e8b-525fd378305d"],
+Cell[1559712, 29284, 160, 3, 42, "Output",ExpressionUUID->"9ed4973f-4533-45b5-b89a-6b357161fe92"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }

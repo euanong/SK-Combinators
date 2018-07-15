@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     40922,       1030]
-NotebookOptionsPosition[     40392,       1013]
-NotebookOutlinePosition[     40779,       1030]
-CellTagsIndexPosition[     40736,       1027]
+NotebookDataLength[     43227,       1080]
+NotebookOptionsPosition[     42602,       1062]
+NotebookOutlinePosition[     42986,       1079]
+CellTagsIndexPosition[     42943,       1076]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -216,8 +216,38 @@ Cell[BoxData[
                  "\"\<]\>\""}], "]"}], "]"}]}], "]"}], "]"}], ">", "0"}]}], 
          ")"}], "&&", 
         RowBox[{
-         RowBox[{"validCombinatorStringQ", "[", "s", "]"}], "\[Equal]", 
-         "True"}]}], ",", "True", ",", "False"}], "]"}]}], ";"}], 
+         RowBox[{"validCombinatorStringQ", "[", "s", "]"}], "===", "True"}]}],
+        ",", "True", ",", "False"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"makeFailure", "[", 
+     RowBox[{"message_", ",", 
+      RowBox[{"context_:", 
+       RowBox[{"<|", "|>"}]}]}], "]"}], ":=", 
+    RowBox[{"Failure", "[", "\[IndentingNewLine]", 
+     RowBox[{"\"\<RestrictionFailure\>\"", ",", 
+      RowBox[{"<|", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"\"\<MessageTemplate\>\"", "\[Rule]", "message"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\"\<MessageParameters\>\"", "\[Rule]", "context"}]}], 
+       "\[IndentingNewLine]", "|>"}]}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SKCombinatorValidator", "[", "expression_", "]"}], ":=", 
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"expr", "=", 
+        RowBox[{
+         RowBox[{"Interpreter", "[", "\"\<String\>\"", "]"}], "[", 
+         "expression", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"ValidSKCombinatorQ", "[", "expr", "]"}], ",", "expr", ",", 
+        RowBox[{
+        "makeFailure", "[", "\"\<SK combinator expression invalid.\>\"", 
+         "]"}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"SKRules", "=", 
@@ -336,43 +366,44 @@ Cell[BoxData[
      RowBox[{"StringLength", "/@", 
       RowBox[{"ToString", "/@", 
        RowBox[{"SKEvaluate", "[", 
-        RowBox[{"exp", ",", "n"}], "]"}]}]}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "gives", " ", "length", " ", "of", " ", "each", " ", "step", " ", "of", 
-      " ", "expression", " ", "exp", " ", "until", " ", "limit", " ", "n"}], 
-     "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"exp", ",", "n"}], "]"}]}]}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "gives", " ", "length", " ", "of", " ", "each", " ", "step", " ", "of", 
+     " ", "expression", " ", "exp", " ", "until", " ", "limit", " ", "n"}], 
+    "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{
      RowBox[{"SKEvaluateUntilHalt", "[", 
       RowBox[{"expr_", ",", "n_"}], "]"}], " ", ":=", " ", 
      RowBox[{"FixedPointList", "[", 
       RowBox[{"SKNext", ",", "expr", ",", 
-       RowBox[{"n", "+", "1"}]}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{
-      "returns", " ", "list", " ", "of", " ", "steps", " ", "of", " ", 
-       "evaluation", " ", "of", " ", "expression", " ", "until", " ", "n"}], 
-      "+", 
-      RowBox[{"1", "th", " ", "step"}]}], "*)"}], "\[IndentingNewLine]", 
-    "\[IndentingNewLine]", 
+       RowBox[{"n", "+", "1"}]}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
     RowBox[{
-     RowBox[{"SKHaltLength", "[", 
-      RowBox[{"expr_", ",", "n_"}], "]"}], ":=", 
-     RowBox[{"Module", "[", 
+     RowBox[{
+     "returns", " ", "list", " ", "of", " ", "steps", " ", "of", " ", 
+      "evaluation", " ", "of", " ", "expression", " ", "until", " ", "n"}], 
+     "+", 
+     RowBox[{"1", "th", " ", "step"}]}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SKHaltLength", "[", 
+     RowBox[{"expr_", ",", "n_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", "x", "}"}], ",", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"{", "x", "}"}], ",", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"x", "=", 
-         RowBox[{"Length", "[", 
-          RowBox[{"SKEvaluateUntilHalt", "[", 
-           RowBox[{"expr", ",", 
-            RowBox[{"n", "+", "1"}]}], "]"}], "]"}]}], ";", 
-        "\[IndentingNewLine]", 
-        RowBox[{"If", "[", 
-         RowBox[{
-          RowBox[{"x", ">", "n"}], ",", "False", ",", "x"}], "]"}]}]}], 
-      "\[IndentingNewLine]", "]"}]}]}], " ", "\[IndentingNewLine]", 
+       RowBox[{"x", "=", 
+        RowBox[{"Length", "[", 
+         RowBox[{"SKEvaluateUntilHalt", "[", 
+          RowBox[{"expr", ",", 
+           RowBox[{"n", "+", "1"}]}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"x", ">", "n"}], ",", "False", ",", "x"}], "]"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], " ", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"returns", " ", "false", " ", "if", " ", 
@@ -980,9 +1011,16 @@ codings/Wolfram/SK-Combinators/\>\"", "<>", "name"}], "]"}]}],
    3.74026625853575*^9, 3.740266275183691*^9}, {3.740266480882312*^9, 
    3.740266481715136*^9}, {3.740268632813499*^9, 3.740268636565351*^9}, {
    3.740268882341457*^9, 3.7402689169034986`*^9}, {3.740309358115561*^9, 
-   3.740309438619647*^9}},
- CellLabel->
-  "In[218]:=",ExpressionUUID->"beadd322-dada-4fa7-8636-ec449f5f2941"],
+   3.740309438619647*^9}, {3.7403103813141613`*^9, 3.740310442820653*^9}, {
+   3.740310486580636*^9, 3.740310681548255*^9}, {3.740310824161927*^9, 
+   3.740310850432769*^9}, {3.7403112326775293`*^9, 3.740311269029128*^9}, {
+   3.740311329331471*^9, 3.74031133023457*^9}, {3.7403114116756144`*^9, 
+   3.7403114142157707`*^9}, {3.7403117280556803`*^9, 3.740311739434524*^9}, {
+   3.740311872004455*^9, 3.740311880810336*^9}, {3.740311955200335*^9, 
+   3.740311966843668*^9}, {3.7403127466552343`*^9, 3.740312764665793*^9}, {
+   3.740312839716164*^9, 3.740312854068329*^9}, {3.740312899400404*^9, 
+   3.740312907016129*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"beadd322-dada-4fa7-8636-ec449f5f2941"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1000,19 +1038,30 @@ Cell[BoxData[{
  CellChangeTimes->{{3.739983217619828*^9, 3.739983224208953*^9}, {
   3.739983280495987*^9, 3.739983289167026*^9}, {3.739985602760582*^9, 
   3.739985608749604*^9}},
- CellLabel->"In[32]:=",ExpressionUUID->"2c9efc6d-0337-4046-8e16-e8c5d7148743"],
+ CellLabel->
+  "In[1053]:=",ExpressionUUID->"2c9efc6d-0337-4046-8e16-e8c5d7148743"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
   RowBox[{"note", " ", "to", " ", 
    RowBox[{"self", ":", " ", 
     RowBox[{"use", " ", "paralleltable"}]}]}], " ", "*)"}]], "Input",
- CellChangeTimes->{{3.739926810405403*^9, 
-  3.7399268172739897`*^9}},ExpressionUUID->"30c0c76e-830b-49a1-a2ac-\
-61684def5a34"]
+ CellChangeTimes->{{3.739926810405403*^9, 3.7399268172739897`*^9}},
+ CellLabel->
+  "In[1055]:=",ExpressionUUID->"30c0c76e-830b-49a1-a2ac-61684def5a34"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ImportDataset", "[", "name_", "]"}], ":=", 
+  RowBox[{"Get", "[", 
+   RowBox[{
+   "\"\</Users/eohomegrownapps/CODE/Assorted \
+codings/Wolfram/SK-Combinators/\>\"", "<>", "name"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.740409947806217*^9, 3.740409948097101*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"94e6862d-23f6-4012-afaa-0c90aad276f0"]
 },
-WindowSize->{868, 857},
-WindowMargins->{{108, Automatic}, {Automatic, 170}},
+WindowSize->{877, 851},
+WindowMargins->{{Automatic, 17}, {Automatic, 0}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 7, \
 2018)",
@@ -1029,9 +1078,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 38890, 964, 5201, "Input",ExpressionUUID->"beadd322-dada-4fa7-8636-ec449f5f2941"],
-Cell[39454, 986, 634, 16, 64, "Input",ExpressionUUID->"2c9efc6d-0337-4046-8e16-e8c5d7148743"],
-Cell[40091, 1004, 297, 7, 37, "Input",ExpressionUUID->"30c0c76e-830b-49a1-a2ac-61684def5a34"]
+Cell[561, 20, 40691, 1002, 5427, "Input",ExpressionUUID->"beadd322-dada-4fa7-8636-ec449f5f2941"],
+Cell[41255, 1024, 639, 17, 64, "Input",ExpressionUUID->"2c9efc6d-0337-4046-8e16-e8c5d7148743"],
+Cell[41897, 1043, 321, 7, 37, "Input",ExpressionUUID->"30c0c76e-830b-49a1-a2ac-61684def5a34"],
+Cell[42221, 1052, 377, 8, 116, "Input",ExpressionUUID->"94e6862d-23f6-4012-afaa-0c90aad276f0"]
 }
 ]
 *)
