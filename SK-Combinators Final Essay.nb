@@ -30147,7 +30147,7 @@ http://www.iis.sinica.edu.tw/~scm/Agda/Agda-Termination-Termination.html \
 PrintingStyleEnvironment->"Working",
 WindowToolbars->"EditBar",
 WindowSize->{818, 579},
-WindowMargins->{{Automatic, -20}, {Automatic, 93}},
+WindowMargins->{{275, Automatic}, {32, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 PrintingOptions->{"PageSize"->Automatic,
